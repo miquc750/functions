@@ -6,8 +6,9 @@ document.head.appendChild(markdownIt)
 
 // Access Airtable API
 var Airtable = require('airtable');
-Airtable.configure({
-    endpointUrl: 'https://api.airtable.com',
-    apiKey: 'patyGtqiWtf3ypzpD.1b2d79f7d1611c97f50628a1aa4b05546bda8e1c09885ddfd203d6f81fc168ba'
+var base = new Airtable({apiKey: 'patyGtqiWtf3ypzpD.00631f93c77f8bb3f8c7b45f64a6a2b3d72575b51bac2e679507666590ac875a'}).base('appBL5bDGDsHFNRAh');
+
+base('cities').find('recr9qxyXRNQD7QNa', function(err, record) {
+    if (err) { console.error(err); return; }
+    console.log('Retrieved', record.id);
 });
-var base = Airtable.base('appBL5bDGDsHFNRAh');
