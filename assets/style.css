@@ -1,3 +1,14 @@
+/* importing fonts */
+@font-face {
+    font-family: 'against';
+    src: url('fonts/against.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'clinton';
+    src: url('fonts/clinton');
+}
+
 /* setting up variables */
 
 :root {
@@ -10,9 +21,15 @@
     --blue: #2376E4;
     --green: #A0B74D;
     --yellow: #F7C600;
+    --font-display: 'against';
+    --font: 'clinton';
 }
 
 /* mobile */
+
+html {
+    font-family: var(--font);
+}
 
 .header-menu {
     position:sticky;
@@ -27,6 +44,18 @@ main {
 
 html {
     background-color: var(--blue);
+}
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
 }
 
 /* desktop */
