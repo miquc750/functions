@@ -29,6 +29,28 @@
 
     /* text */
 
+    h1 {
+        font-family: var(--font-display);
+        font-size: 20vw;
+        text-align: center;
+        position:sticky;
+        width: 100%;
+        bottom: -64px;
+    }
+
+    h2 {
+        font-family: var(--font-display);
+        font-size: calc(var(--font-size)*3);
+        text-align: center;
+        position:sticky;
+        width: 100%;
+        bottom: -64px;
+    }
+
+    p {
+        margin-bottom: var(--gutter);
+    }
+
     html {
         font-family: var(--font);
     }
@@ -37,7 +59,20 @@
         font-weight: 700;
     }
 
+    em {
+        font-style: italic;
+    }
+
+    .resource-grid a {
+        color: var(--blue);
+        transition: 0.25s linear;
+    }
+
     footer p {
+        text-align: center;
+    }
+
+    .banner p {
         text-align: center;
     }
 
@@ -49,10 +84,6 @@
         top: 0px;
         color: var(--white);
         /* add mobile version */
-    }
-
-    main {
-        padding: var(--gutter);
     }
 
     html {
@@ -67,11 +98,85 @@
         justify-content: center;
     }
 
+    .cover {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 15% 20% 5% 20%;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+        gap: calc(var(--gutter)*2.5);
+    }
+
+    /* components */
+
+    button {
+        background-color: var(--black);
+        color: var(--white);
+        padding: var(--gutter) calc(var(--gutter)*1.5) var(--gutter) calc(var(--gutter)*1.5);
+        border-radius: 8px;
+        text-wrap: nowrap;
+        text-align: center;
+    }
+
+    .where button, .city button {
+        border-radius: 48px;
+        font-size: var(--font-size);
+        background-color: transparent;
+        color: var(--black);
+        padding: 8px 16px 8px 16px;
+        border: solid 1px var(--black);
+        width: 100%;
+    }
+
+    .resource-grid div {
+        width: 100%;
+        padding: var(--gutter);
+        border-radius: 12px;
+        border: 1px solid var(--black);
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter);
+    }
+
+    .data-section {
+        display: flex;
+        flex-direction: row;
+        gap: calc(var(--gutter)*2);
+    }
+
+    .datapill {
+        display: flex;
+        flex-direction: column;
+        margin-top: calc(var(--gutter)*2);
+    }
+
+    .data {
+        font-size: calc(var(--font-size)*3);
+        font-weight: 800;
+    }
 
 
 /* desktop */
 
 @media (min-width: 768px) {
+
+    /* text */
+
+    .resource-grid a:hover {
+        color: var(--red);
+        transition: 0.25s linear;
+    }
+
+    /* sections */
+
     .header-menu {
         display: flex;
         flex-direction: row;
@@ -93,11 +198,79 @@
         justify-items: center;
     }
 
-    main {
-        padding: 10%;
+    .view-where {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 10%; 
+        background-color: var(--white); 
+        gap: var(--gutter); 
     }
 
-    img:hover {
+    .view-where ul {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gutter);
+
+    }
+
+    .where {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: calc(var(--gutter)*4);
+        align-items: start;
+    }
+
+    .city {
+        padding: 10%; 
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gutter)*2);
+    }
+
+    .city-radar {
+        background-color: var(--yellow);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #myRadarChart {
+        max-width: fit-content;
+    }
+
+    .city ul {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gutter);
+    }
+
+    .where ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter);
+    }
+
+    .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gutter);
+    }
+
+    /* components */
+
+    button:hover {
+        background-color: var(--red);
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+
+    button:active {
+        background-color: var(--yellow);
+    }
+
+    .home-menu img:hover {
         transform: scale(1.1);
         transition: 0.75s linear;
     }

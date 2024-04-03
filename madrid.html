@@ -5,11 +5,111 @@
         <link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/svg" href="assets/favicon.svg"/>
-        <script defer src="arena.js"></script>
+        <script defer src="airtable.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
     <body>
+        <!-- header menu -->
+        <header>
+            <ul class="header-menu">
+                <li><a href="">Github</a></li>
+                <section>
+                    <ul>
+                        <li><a href="">Visa</a></li>
+                        <li><a href="">Logo</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </section>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </header>
+
         <main>
+            <!-- cover -->
+            <section class="cover">
+                <h1>Madrid</h1>
+                <img src="https://www.spain.info/.content/images/cabeceras-grandes/comunidad-valenciana/ciudad-artes-ciencias-noche-valencia-pexel256150.jpg" alt="Valencia">
+            </section>
+
+            <!-- info about the city -->
+            <section class="city-radar">
+                <canvas id="myRadarChart"></canvas>
+                <section class="city">
+                    <ul>
+                        <li><button>Cost of living</button></li>
+                        <li><button>Safety</button></li>
+                        <li><button>Weather</button></li>
+                        <li><button>Transportation</button></li>
+                    </ul>
+                    <section>
+                        <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
+                        <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
+                        <section class="data-section">
+                            <div class="datapill">
+                                <p class="data">32</p>
+                                <p>whatever</p>
+                            </div>
+                            <div class="datapill">
+                                <p class="data">32</p>
+                                <p>whatever</p>
+                            </div>
+                            <div class="datapill">
+                                <p class="data">32</p>
+                                <p>whatever</p>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+                
+
+            <!-- places to... -->
+            <section class="view-where">
+                <ul>
+                    <li>list</li>
+                    <li>map</li>
+                </ul>
+                <section class="where">
+                    <ul>
+                        <li><button>Where to work</button></li>
+                        <li><button>Where to stay</button></li>
+                        <li><button>Where to eat</button></li>
+                        <li><button>What to do</button></li>
+                    </ul>
+                    <section class="resource-grid">
+                        <div>
+                            <img src="https://madriddiferente.com/wp-content/uploads/2022/01/OSOM-COFFEE-Horizontal-770x466.jpg" alt="OSOM inside">
+                            <h3>OSOM Coffee Atelier</h3>
+                            <p>Calle de Sta. Teresa, 2, Bajo-Local 4, Centro, 28004 Madrid</p>
+                            <a href="https://g.co/kgs/CNLJwie" target="_blank">See in maps</a>
+                        </div>
+                        <div>
+                            <img src="https://madriddiferente.com/wp-content/uploads/2022/01/OSOM-COFFEE-Horizontal-770x466.jpg" alt="OSOM inside">
+                            <h3>OSOM Coffee Atelier</h3>
+                            <p>Calle de Sta. Teresa, 2, Bajo-Local 4, Centro, 28004 Madrid</p>
+                            <a href="https://g.co/kgs/CNLJwie" target="_blank">See in maps</a>
+                        </div>
+                        <div>
+                            <img src="https://madriddiferente.com/wp-content/uploads/2022/01/OSOM-COFFEE-Horizontal-770x466.jpg" alt="OSOM inside">
+                            <h3>OSOM Coffee Atelier</h3>
+                            <p>Calle de Sta. Teresa, 2, Bajo-Local 4, Centro, 28004 Madrid</p>
+                            <a href="https://g.co/kgs/CNLJwie" target="_blank">See in maps</a>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!-- banner... -->
+            <section class="banner">
+                <h2>Know a cool spot?</h2>
+                <p>Nómadlandia is a community of passionate digital nomads, built by and for them. Locals and experienced nomads are what make it valuable for everyone.</p>
+                <button>Send it to us!</button>
+            </section>
         </main>
+
+        <footer>
+            <p>crafted with lof and coffee by Cristina Miquel</p>
+        </footer>
     </body>
 </html>
