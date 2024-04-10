@@ -226,18 +226,19 @@
         padding: 10%; 
         display: flex;
         flex-direction: column;
-        gap: calc(var(--gutter)*2);
+        gap: calc(var(--gutter)*2);ç
+        max-width: 50vw;
     }
 
     .city-radar {
         background-color: var(--yellow);
         display: flex;
         flex-direction: row;
-        width: 100%;
+        max-width: 100vw;
     }
 
     #myRadarChart {
-        max-width: fit-content;
+        max-width: 50vw;
     }
 
     .city ul {
