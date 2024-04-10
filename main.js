@@ -4,32 +4,6 @@ let markdownIt = document.createElement('script')
 markdownIt.src = 'https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.min.js'
 document.head.appendChild(markdownIt) */
 
-// Functions to render your items
-const renderItems = (data) => {
-    // The'ul' where the items will be inserted
-    const dataList = document.getElementById('data-list')
-
-    // Loop through each item in the data array
-    data.forEach((item) => {
-        let conditionalClass = '' // Set an empty class variable
-
-        /* if(!item.alsoWasWriter) { // Conditional if this is 'false' ("not true")
-            conditionalClass = 'faded' // Update the variable
-        } */
-
-        // Make a "template literal" as we have before, inserting your data
-        let listItem =
-
-            <li class="${conditionalClass}">
-                <h2>${item.city}</h2>
-                <p>Released in ${item.population}</p>
-            </li>
-
-        dataList.insertAdjacentHTML('beforeend', listItem) //Add it to the 'ul'
-    }
-    );    
-}
-
 // Chart
 var ctx = document.getElementById('myRadarChart').getContext('2d');
 var myRadarChart = new Chart(ctx, {
@@ -79,3 +53,55 @@ base('cities').find('recr9qxyXRNQD7QNa', function(err, record) {
     console.log('Retrieved', record.id);
 });
 */
+
+/* Functions to render your items
+const renderItems = (data) => {
+    // The'ul' where the items will be inserted
+    const dataList = document.getElementById('data-list')
+
+    // Loop through each item in the data array
+    data.forEach((item) => {
+        let conditionalClass = '' // Set an empty class variable
+
+        if(!item.alsoWasWriter) { // Conditional if this is 'false' ("not true")
+            conditionalClass = 'faded' // Update the variable
+        }
+
+        // Make a "template literal" as we have before, inserting your data
+        let listItem =
+
+            <li class="${conditionalClass}">
+                <h2>${item.city}</h2>
+                <p>Released in ${item.population}</p>
+            </li>
+
+        dataList.insertAdjacentHTML('beforeend', listItem) //Add it to the 'ul'
+    }
+    );    
+} */
+
+const fetchAndRenderItems = async () => {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        renderItems(data);
+    } catch (error) {
+        console.error('Error loading data', error);
+    }
+}
+
+const renderItems = (data) => {
+    const dataList = document.getElementById('data-list');
+    data.forEach((item) => {
+        let conditionalClass = ''; // Aquí puedes añadir lógica para cambiar la clase basada en alguna condición
+        let listItem = `
+            <li class="${conditionalClass}">
+                <h2>${item.City}</h2>
+                <p>Population: ${item.Population}</p>
+            </li>
+        `;
+        dataList.insertAdjacentHTML('beforeend', listItem);
+    });
+}
+
+fetchAndRenderItems();
