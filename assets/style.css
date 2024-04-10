@@ -12,7 +12,7 @@
 /* setting up variables */
 
 :root {
-    --font-size: 16px;
+    --font-size: 14px;
     --font-weight: 400;
     --gutter: 16px;
     --black: #001E08;
@@ -33,9 +33,12 @@
         font-family: var(--font-display);
         font-size: 20vw;
         text-align: center;
-        position:sticky;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: calc(var(--gutter)/6);
         width: 100%;
         bottom: -64px;
+        color: var(--yellow);
     }
 
     h2 {
@@ -45,6 +48,10 @@
         position:sticky;
         width: 100%;
         bottom: -64px;
+    }
+
+    h3 {
+        font-weight: 700;
     }
 
     p {
@@ -63,13 +70,16 @@
         font-style: italic;
     }
 
-    .resource-grid a {
+    .resource-grid a, .filter {
         color: var(--blue);
         transition: 0.25s linear;
+        background-color: transparent;
+        padding: 0;
     }
 
     footer p {
         text-align: center;
+        color: var(--white);
     }
 
     .banner p {
@@ -79,10 +89,11 @@
     /* sections */ 
 
     header {
-        position: sticky;
+        position: fixed;
         width: 100%;
         top: 0px;
         color: var(--white);
+        z-index: 1;
         /* add mobile version */
     }
 
@@ -100,11 +111,19 @@
 
     .cover {
         width: 100%;
+        height: 100vh;
         padding: 0;
+        position: relative;
+        background-image: 
+        linear-gradient(to bottom right, rgba(35, 118, 228, 0.6), rgba(241, 82, 17, 0.4)),
+        url('https://www.spain.info/.content/images/cabeceras-grandes/comunidad-valenciana/ciudad-artes-ciencias-noche-valencia-pexel256150.jpg');
+        background-size: cover;
     }
 
     .cover img {
         width: 100%;
+        position: relative;
+        bottom: 0px;
     }
 
     .banner {
@@ -117,6 +136,15 @@
 
     /* components */
 
+    a:hover,  .filter:hover {
+        color: var(--red);
+        background-color: transparent;
+    }
+
+    a:active {
+        color: var(--yellow);
+    }
+
     button {
         background-color: var(--black);
         color: var(--white);
@@ -126,7 +154,17 @@
         text-align: center;
     }
 
-    .where button, .city button {
+    .city button {
+        border-radius: 48px;
+        font-size: 14px;
+        background-color: transparent;
+        color: var(--black);
+        padding: 8px 16px 8px 16px;
+        border: solid 1px var(--black);
+        width: 100%;
+    }
+
+    .where button {
         border-radius: 48px;
         font-size: var(--font-size);
         background-color: transparent;
@@ -163,6 +201,12 @@
         font-weight: 800;
     }
 
+    .header-menu img {
+        width: 24px;
+        height: 24px;
+        filter: grayscale(100) brightness(300%);
+    }
+
 
 /* desktop */
 
@@ -182,6 +226,12 @@
         flex-direction: row;
         padding: calc(var(--gutter)*2);
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu img:hover {
+        filter: unset;
+        transition: 0.3s linear;
     }
 
     .header-menu ul {
@@ -196,6 +246,7 @@
         grid-template-columns: repeat(3,1fr);
         gap: calc(var(--gutter)*6);
         justify-items: center;
+        padding: 10%;
     }
 
     .view-where {
@@ -223,28 +274,34 @@
     }
 
     .city {
-        padding: 10%; 
         display: flex;
         flex-direction: column;
-        gap: calc(var(--gutter)*2);ç
+        gap: calc(var(--gutter)*2);
         max-width: 50vw;
     }
 
     .city-radar {
         background-color: var(--yellow);
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5%;
+        align-items: start;
         max-width: 100vw;
+        padding: 10% calc(var(--gutter)*2) 10% calc(var(--gutter)*2);
     }
 
     #myRadarChart {
-        max-width: 50vw;
+        max-width: 560px;
+        max-height: 560px;
+        background-color: var(--white);
+        padding: var(--gutter);
+        border-radius: 16px;
     }
 
     .city ul {
         display: flex;
         flex-direction: row;
-        gap: var(--gutter);
+        gap: calc(var(--gutter)/2);
     }
 
     .where ul {

@@ -11,17 +11,17 @@ var myRadarChart = new Chart(ctx, {
     data: {
         labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
         datasets: [{
-            label: 'Ciudad A',
-            data: [5, 8, 4, 7], // Aquí se debe ingresar los valores para cada parámetro de Ciudad A
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            label: 'Valencia',
+            data: [5, 8, 4, 7],
+            backgroundColor: 'transparent',
+            borderColor: '#2376E4',
             borderWidth: 1
         },
         {
-            label: 'Ciudad B',
-            data: [7, 6, 5, 9], // Aquí se debe ingresar los valores para cada parámetro de Ciudad B
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            label: 'Madrid',
+            data: [7, 6, 5, 9],
+            backgroundColor: 'transparent',
+            borderColor: '#F15211',
             borderWidth: 1
         }]
     },
