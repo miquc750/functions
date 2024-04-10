@@ -54,31 +54,6 @@ base('cities').find('recr9qxyXRNQD7QNa', function(err, record) {
 });
 */
 
-/* Functions to render your items
-const renderItems = (data) => {
-    // The'ul' where the items will be inserted
-    const dataList = document.getElementById('data-list')
-
-    // Loop through each item in the data array
-    data.forEach((item) => {
-        let conditionalClass = '' // Set an empty class variable
-
-        if(!item.alsoWasWriter) { // Conditional if this is 'false' ("not true")
-            conditionalClass = 'faded' // Update the variable
-        }
-
-        // Make a "template literal" as we have before, inserting your data
-        let listItem =
-
-            <li class="${conditionalClass}">
-                <h2>${item.city}</h2>
-                <p>Released in ${item.population}</p>
-            </li>
-
-        dataList.insertAdjacentHTML('beforeend', listItem) //Add it to the 'ul'
-    }
-    );    
-} */
 
 const fetchAndRenderItems = async () => {
     try {
@@ -90,14 +65,25 @@ const fetchAndRenderItems = async () => {
     }
 }
 
+// Functions to render your items
 const renderItems = (data) => {
+    // The'ul' where the items will be inserted
     const dataList = document.getElementById('data-list');
+
+    // Loop through each item in the data array
     data.forEach((item) => {
-        let conditionalClass = ''; // Aquí puedes añadir lógica para cambiar la clase basada en alguna condición
-        let listItem = `
+        let conditionalClass = ''; // Set an empty class variable
+        
+        /* if(!item.alsoWasWriter) { // Conditional if this is 'false' ("not true")
+            conditionalClass = 'faded' // Update the variable
+        } */
+        
+        // Make a "template literal" as we have before, inserting your data
+        let listItem = 
+        `
             <li class="${conditionalClass}">
-                <h2>${item.City}</h2>
-                <p>Population: ${item.Population}</p>
+                <h2>${item.city}</h2>
+                <p>Population: ${item.population}</p>
             </li>
         `;
         dataList.insertAdjacentHTML('beforeend', listItem);
@@ -105,3 +91,50 @@ const renderItems = (data) => {
 }
 
 fetchAndRenderItems();
+
+// City information buttons
+
+document.getElementById('costButton').addEventListener('click', function() {
+    document.getElementById('infoContent').innerHTML =
+    `
+        <section>
+            <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
+            <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p> <section class="data-section">
+            <div class="datapill">
+                <p class="data">32</p>
+                <p>whatever</p>
+            </div>
+            <div class="datapill">
+                <p class="data">32</p>
+                <p>whatever</p>
+            </div>
+            <div class="datapill">
+                <p class="data">32</p>
+                <p>whatever</p>
+            <div>
+        </section>
+    `;
+    setActiveButton('costButton');
+});
+
+document.getElementById('safetyButton').addEventListener('click', function() {
+    document.getElementById('infoContent').innerHTML = '<p>Información sobre Seguridad.</p>';
+    setActiveButton('safetyButton');
+});
+
+document.getElementById('weatherButton').addEventListener('click', function() {
+    document.getElementById('infoContent').innerHTML = '<p>Información sobre Clima.</p>';
+    setActiveButton('weatherButton');
+});
+
+document.getElementById('transportButton').addEventListener('click', function() {
+    document.getElementById('infoContent').innerHTML = '<p>Información sobre Transporte.</p>';
+    setActiveButton('transportButton');
+});
+
+function setActiveButton(activeId) {
+    ['costButton', 'safetyButton', 'weatherButton', 'transportButton'].forEach(id => {
+        document.getElementById(id).classList.remove('button-active');
+    });
+    document.getElementById(activeId).classList.add('button-active');
+}

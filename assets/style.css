@@ -145,7 +145,7 @@
         color: var(--yellow);
     }
 
-    button {
+    .banner button {
         background-color: var(--black);
         color: var(--white);
         padding: var(--gutter) calc(var(--gutter)*1.5) var(--gutter) calc(var(--gutter)*1.5);
@@ -154,10 +154,13 @@
         text-align: center;
     }
 
+    .button-active {
+        background-color: var(--red);
+    }
+
     .city button {
         border-radius: 48px;
         font-size: 14px;
-        background-color: transparent;
         color: var(--black);
         padding: 8px 16px 8px 16px;
         border: solid 1px var(--black);

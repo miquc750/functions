@@ -5,7 +5,7 @@
         <link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/svg" href="assets/favicon.svg"/>
-        <script defer src="airtable.js"></script>
+        <script defer src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
@@ -37,28 +37,17 @@
                 <canvas id="myRadarChart"></canvas>
                 <section class="city">
                     <ul>
-                        <li><button>Cost</button></li>
-                        <li><button>Safety</button></li>
-                        <li><button>Weather</button></li>
-                        <li><button>Transportation</button></li>
+                        <li><button id="costButton">Cost</button></li>
+                        <li><button id="safetyButton">Safety</button></li>
+                        <li><button id="weatherButton">Weather</button></li>
+                        <li><button id="transportButton">Transportation</button></li>
                     </ul>
-                    <section>
-                        <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
-                        <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
-                        <section class="data-section">
-                            <div class="datapill">
-                                <p class="data">32</p>
-                                <p>whatever</p>
-                            </div>
-                            <div class="datapill">
-                                <p class="data">32</p>
-                                <p>whatever</p>
-                            </div>
-                            <div class="datapill">
-                                <p class="data">32</p>
-                                <p>whatever</p>
-                            </div>
-                        </section>
+                    <section id="infoContent">
+                        <p>Seleccione una opción para ver los datos.</p>
+                    </section>
+                    <section class="data-section" style="display:none;">
+                        <p>HOLA</p>
+                        <!-- Los contenidos específicos podrán ir aquí si es necesario -->
                     </section>
                 </section>
 
@@ -105,7 +94,7 @@
             <!-- banner... -->
             <section class="banner">
                 <h2>Know a cool spot?</h2>
-                <p>Nómadlandia is a community of passionate digital nomads, built by and for them. Locals and experienced nomads are what make it valuable for everyone.</p>
+                <p>Nomadlandia is a community of passionate digital nomads, built by and for them. Locals and experienced nomads are what make it valuable for everyone.</p>
                 <button>Send it to us!</button>
             </section>
         </main>
