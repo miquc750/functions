@@ -54,84 +54,63 @@ base('cities').find('recr9qxyXRNQD7QNa', function(err, record) {
 });
 */
 
-
+// Fetch and display all items from data.json
 const fetchAndRenderItems = async () => {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
-        renderItems(data);
+        renderItems(data);  // Consider what to do with this renderItems
     } catch (error) {
-        console.error('Error loading data', error);
+        console.error('Error loading data:', error);
     }
 }
 
-// Functions to render your items
-const renderItems = (data) => {
-    // The'ul' where the items will be inserted
-    const dataList = document.getElementById('data-list');
+// Correctly identify the city from the URL
+function getCity() {
+    const currentURL = window.location.pathname;
+    const currentURLSplit = currentURL.split("/");
+    const cityName = currentURLSplit[currentURLSplit.length - 1].toLowerCase();  // Ensure consistency in comparison
+    return cityName;
+}
 
-    // Loop through each item in the data array
-    data.forEach((item) => {
-        let conditionalClass = ''; // Set an empty class variable
-        
-        /* if(!item.alsoWasWriter) { // Conditional if this is 'false' ("not true")
-            conditionalClass = 'faded' // Update the variable
-        } */
-        
-        // Make a "template literal" as we have before, inserting your data
-        let listItem = 
-        `
-            <li class="${conditionalClass}">
-                <h2>${item.city}</h2>
-                <p>Population: ${item.population}</p>
-            </li>
-        `;
-        dataList.insertAdjacentHTML('beforeend', listItem);
+const cityName = getCity();  // Retrieve the city name when the script loads
+
+// Define an event to set up buttons after data has loaded
+const setupButtons = (cityData) => {
+    document.getElementById('costButton').addEventListener('click', () => {
+        document.getElementById('infoContent').innerHTML = `<p>Cost of living is ${cityData.population}</p>`;
+        setActiveButton('costButton');
+    });
+
+    document.getElementById('safetyButton').addEventListener('click', () => {
+        document.getElementById('infoContent').innerHTML = `<p>Crime rate is not available</p>`;
+        setActiveButton('safetyButton');
+    });
+
+    document.getElementById('weatherButton').addEventListener('click', () => {
+        document.getElementById('infoContent').innerHTML = '<p>Weather information is currently not available.</p>';
+        setActiveButton('weatherButton');
+    });
+
+    document.getElementById('transportButton').addEventListener('click', () => {
+        document.getElementById('infoContent').innerHTML = '<p>Transportation information is currently not available.</p>';
+        setActiveButton('transportButton');
     });
 }
 
-fetchAndRenderItems();
+// Change initialization of data and buttons
+document.addEventListener("DOMContentLoaded", async () => {
+    const data = await fetch('data.json').then(res => res.json());
+    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);  // Find the specific city data
 
-// City information buttons
+    if (cityData && cityName === "madrid") {
+        setupButtons(cityData);
+    }
 
-document.getElementById('costButton').addEventListener('click', function() {
-    document.getElementById('infoContent').innerHTML =
-    `
-        <section>
-            <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p>
-            <p>Lorem ipsum bla bla bla Lorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla blaLorem ipsum bla bla bla</p> <section class="data-section">
-            <div class="datapill">
-                <p class="data">32</p>
-                <p>whatever</p>
-            </div>
-            <div class="datapill">
-                <p class="data">32</p>
-                <p>whatever</p>
-            </div>
-            <div class="datapill">
-                <p class="data">32</p>
-                <p>whatever</p>
-            <div>
-        </section>
-    `;
-    setActiveButton('costButton');
+    fetchAndRenderItems();  // Optional, depends on what this function does
 });
 
-document.getElementById('safetyButton').addEventListener('click', function() {
-    document.getElementById('infoContent').innerHTML = '<p>Información sobre Seguridad.</p>';
-    setActiveButton('safetyButton');
-});
-
-document.getElementById('weatherButton').addEventListener('click', function() {
-    document.getElementById('infoContent').innerHTML = '<p>Información sobre Clima.</p>';
-    setActiveButton('weatherButton');
-});
-
-document.getElementById('transportButton').addEventListener('click', function() {
-    document.getElementById('infoContent').innerHTML = '<p>Información sobre Transporte.</p>';
-    setActiveButton('transportButton');
-});
-
+// Helper function to set active button styling
 function setActiveButton(activeId) {
     ['costButton', 'safetyButton', 'weatherButton', 'transportButton'].forEach(id => {
         document.getElementById(id).classList.remove('button-active');

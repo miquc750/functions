@@ -5,13 +5,14 @@
         <link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/svg" href="assets/favicon.svg"/>
-        <script defer src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer src="main.js"></script>
     </head>
 
     <body>
         <!-- header menu -->
         <header>
+            <div id="dataDiv" data-city="madrid"></div>
             <ul class="header-menu">
                 <li><a href="https://github.com/miquc750/functions" target="_blank"><img src="assets/img/github.svg" alt="Github"></a></li>
                 <section>
@@ -43,7 +44,7 @@
                         <li><button id="transportButton">Transportation</button></li>
                     </ul>
                     <section id="infoContent">
-                        <p>Seleccione una opción para ver los datos.</p>
+                        <p>Select an option to see the data.</p>
                     </section>
                     <section class="data-section" style="display:none;">
                         <p>HOLA</p>
@@ -54,7 +55,6 @@
                 <ul id="data-list"></ul>
             </section>
                 
-
             <!-- places to... -->
             <section class="view-where">
                 <ul>

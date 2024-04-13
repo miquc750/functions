@@ -1,83 +1,25 @@
-[
-    {
-        "City": "Valencia",
-        "Ranking": "1",
-        "Population": "807693",
-        "Crime": "79",
-        "Cost of living": "$734",
-        "Rent": "$1,018",
-        "ID": "recr9qxyXRNQD7QNa"
-    },
-    {
-        "City": "Madrid",
-        "Ranking": "2",
-        "Population": "3332035",
-        "Crime": "76",
-        "Cost of living": "$831",
-        "Rent": "$1,217",
-        "ID": "recVOH1ghDwwKBL12"
-    },
-    {
-        "City": "Málaga",
-        "Ranking": "3",
-        "Population": "586384",
-        "Crime": "60",
-        "Cost of living": "$737",
-        "Rent": "$931",
-        "ID": "recZvq5PYjjZ6aRxk"
-    },
-    {
-        "City": "Barcelona",
-        "Ranking": "4",
-        "Population": "1660122",
-        "Crime": "114",
-        "Cost of living": "$857",
-        "Rent": "$1,232",
-        "ID": "recu1XaoezbHZAg9b"
-    },
-    {
-        "City": "Sevilla",
-        "Ranking": "5",
-        "Population": "684025",
-        "Crime": "79",
-        "Cost of living": "$799",
-        "Rent": "$825",
-        "ID": "recz9Pa2CRGn1dhRf"
-    },
-    {
-        "City": "Granada",
-        "Ranking": "6",
-        "Population": "230595",
-        "Crime": "59",
-        "Cost of living": "$774",
-        "Rent": "$583",
-        "ID": "recN4IrTYPbnJkh4R"
-    },
-    {
-        "City": "Las Palmas de Gran Canaria",
-        "Ranking": "7",
-        "Population": "378027",
-        "Crime": "53",
-        "Cost of living": "$687",
-        "Rent": "$675",
-        "ID": "recKxtfVDSE3dGY9o"
-    },
-    {
-        "City": "Alicante",
-        "Ranking": "8",
-        "Population": "349282",
-        "Crime": "73",
-        "Cost of living": "$742",
-        "Rent": "$858",
-        "ID": "recSvF8OsmsXACByZ"
-    },
-    {
-        "City": "Palma de Mallorca",
-        "Ranking": "9",
-        "Population": "423350",
-        "Crime": "84",
-        "Cost of living": "$872",
-        "Rent": "$1,019",
-        "ID": "recKOpTpnoYmKrgLJ"
-    }
-]
+{
+    "restaurants": [
+        {
+            "name": "la gaditana",
+            "city": "madrid"
+        },
+
+        {
+            "name": "los naranjos",
+            "city": "valencia"
+        }
+    ],
+
+    "cities": [
+        {
+            "city": "madrid",
+            "population": "3M"
+        },
+
+        {
+            "city": "valencia",
+            "population": "1.5M"
+        }
+    ]
+}
