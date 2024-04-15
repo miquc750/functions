@@ -79,19 +79,19 @@ const cityName = getCity();  // Retrieve the city name when the script loads
 const setupButtons = (cityData) => {
     document.getElementById('costButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML =
-        `<p>${cityData.cost-text}</p>
+        `<p>${cityData.costtext}</p>
         <ul class="data-section">
             <li class="data-pill">
-                <p class="data">${cityData.cost-rent}</p>
-                <p>${cityData.cost-rent-label}</p>
+                <p class="data">${cityData.costrent}</p>
+                <p>${cityData.costrentlabel}</p>
             </li>
             <li class="data-pill">
                 <p class="data">${cityData.expenses}</p>
-                <p>${cityData.cost-expenses-label}</p>
+                <p>${cityData.costexpenseslabel}</p>
             </li>
             <li class="data-pill">
-                <p class="data">${cityData.cost-groceries}</p>
-                <p>${cityData.cost-groceries-label}</p>
+                <p class="data">${cityData.costgroceries}</p>
+                <p>${cityData.costgrocerieslabel}</p>
             </li>
         </ul>
         `
