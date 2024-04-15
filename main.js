@@ -79,38 +79,89 @@ const cityName = getCity();  // Retrieve the city name when the script loads
 const setupButtons = (cityData) => {
     document.getElementById('costButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML =
-        `<p>${cityData.costText}</p>
-        <ul class="data-section">
-            <li class="data-pill">
-                <p class="data">${cityData.costRent}</p>
-                <p>${cityData.costRentLabel}</p>
-            </li>
-            <li class="data-pill">
-                <p class="data">${cityData.costExpenses}</p>
-                <p>${cityData.costExpensesLabel}</p>
-            </li>
-            <li class="data-pill">
-                <p class="data">${cityData.costGroceries}</p>
-                <p>${cityData.costGroceriesLabel}</p>
-            </li>
-        </ul>
-        `
-        ;
+            `<p>${cityData.costText}</p>
+            <ul class="data-section">
+                <li class="data-pill">
+                    <p class="data">${cityData.costRent}</p>
+                    <p>${cityData.costRentLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.costExpenses}</p>
+                    <p>${cityData.costExpensesLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.costGroceries}</p>
+                    <p>${cityData.costGroceriesLabel}</p>
+                </li>
+            </ul>
+            `
+            ;
         setActiveButton('costButton');
     });
 
     document.getElementById('safetyButton').addEventListener('click', () => {
-        document.getElementById('infoContent').innerHTML = `<p>Crime rate is not available</p>`;
+        document.getElementById('infoContent').innerHTML = 
+            `<p>${cityData.securityText}</p>
+            <ul class="data-section">
+                <li class="data-pill">
+                    <p class="data">${cityData.securityCrime}</p>
+                    <p>${cityData.securityCrimeLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.safetyIndex}</p>
+                    <p>${cityData.safetyIndexLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.securityMurder}</p>
+                    <p>${cityData.securityMurderLabel}</p>
+                </li>
+            </ul>
+            `
+            ;
         setActiveButton('safetyButton');
     });
 
     document.getElementById('weatherButton').addEventListener('click', () => {
-        document.getElementById('infoContent').innerHTML = '<p>Weather information is currently not available.</p>';
+        document.getElementById('infoContent').innerHTML = 
+            `<p>${cityData.weatherText}</p>
+            <ul class="data-section">
+                <li class="data-pill">
+                    <p class="data">${cityData.weatherSummer}</p>
+                    <p>${cityData.weatherSummerLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.weatherWinter}</p>
+                    <p>${cityData.weatherWinterLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.weatherRain}</p>
+                    <p>${cityData.weatherRainLabel}</p>
+                </li>
+            </ul>
+            `
+            ;
         setActiveButton('weatherButton');
     });
 
     document.getElementById('transportButton').addEventListener('click', () => {
-        document.getElementById('infoContent').innerHTML = '<p>Transportation information is currently not available.</p>';
+        document.getElementById('infoContent').innerHTML = 
+            `<p>${cityData.transportationText}</p>
+                <ul class="data-section">
+                    <li class="data-pill">
+                        <p class="data">${cityData.transportationMetro}</p>
+                        <p>${cityData.transportationMetroLabel}</p>
+                    </li>
+                    <li class="data-pill">
+                        <p class="data">${cityData.transportationAirport}</p>
+                        <p>${cityData.transportationAirportLabel}</p>
+                    </li>
+                    <li class="data-pill">
+                        <p class="data">${cityData.transportationTrain}</p>
+                        <p>${cityData.transportationTrainLabel}</p>
+                    </li>
+                </ul>
+            `
+            ;
         setActiveButton('transportButton');
     });
 }
