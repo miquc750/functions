@@ -187,6 +187,12 @@
         gap: var(--gutter);
     }
 
+    .card-container img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        max-height: 25%;
+    }
+
     .data-section {
         display: flex;
         flex-direction: row;
