@@ -177,7 +177,7 @@
         width: 100%;
     }
 
-    .displayArea div {
+    .displayArea div, .card-container {
         width: 100%;
         padding: var(--gutter);
         border-radius: 12px;
