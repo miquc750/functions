@@ -139,6 +139,10 @@ document.getElementById('restaurantsButton').addEventListener('click', function(
     displayItems('restaurants');
 });
 
+document.getElementById('hotelsButton').addEventListener('click', function() {
+    displayItems('hotels');
+});
+
 document.getElementById('activitiesButton').addEventListener('click', function() {
     displayItems('activities');
 });
