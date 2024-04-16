@@ -2,6 +2,7 @@
     "coworkings": [
         {
             "city": "madrid",
+            "image": "https://inhabitat.com/wp-content/blogs.dir/1/files/2011/05/Arquimatica-CentroCentro-Refurbished-Palacio-de-Cibeles-Madrid-4-889x627.jpg",
             "name": "CentroCentro",
             "address": "Plaza Cibeles, 1, Retiro, 28014",
             "link": "https://www.centrocentro.org/",
@@ -9,6 +10,7 @@
         },
         {
             "city": "madrid",
+            "image": "https://anybee.com/storage/spaces/700x500_ef7e97404d408ce8379bb7c3665a27bc.jpg",
             "name": "Freeland Coworking",
             "address": "C. de Gandía, 1, local 9A, Retiro, 28007",
             "link": "https://freeland.es/",
@@ -16,6 +18,7 @@
         },
         {
             "city": "madrid",
+            "image": "https://loom.es/wp-content/uploads/2022/03/LS._0218-ret2.jpg",
             "name": "Loom Salamanca",
             "address": "Calle de Don Ramón de la Cruz, 38, Salamanca, 28001",
             "link": "https://loom.es/espacios-coworking/madrid/loom-salamanca/",
@@ -23,6 +26,7 @@
         },
         {
             "city": "madrid",
+            "image": "https://coworkingspain.es/sites/default/files/styles/thumbnail-580x383/public/coworking/azca.jpg?itok=S-KHWtz6",
             "name": "Coworking La Fabrica",
             "address": "Gta. de Quevedo, 9, 5°, Chamberí, 28015",
             "link": "https://coworkinglafabrica.es/quevedo/",
@@ -30,6 +34,7 @@
         },
         {
             "city": "madrid",
+            "image": "https://brainsre.news/wp-content/uploads/2024/01/descarga-1.jpg",
             "name": "Cink Coworking",
             "address": "P.º de la Castellana, 194, Chamartín, 28046",
             "link": "https://cinkcoworking.es/",
@@ -37,6 +42,7 @@
         },
         {
             "city": "barcelona",
+            "image": "https://coworker.imgix.net/photos/spain/barcelona/maui-beach-coworking/main.jpeg?w=800&h=0&q=90&auto=format,compress&fit=crop&mark=/template/img/wm_icon.png&markscale=5&markalign=center,middle",
             "name": "Maui Beach Coworking",
             "address": "Carrer del Perelló, 74, Sant Martí, 08005 Barcelona, España",
             "link": "https://mauicowork.com/",
@@ -44,6 +50,7 @@
         },
         {
             "city": "barcelona",
+            "image": "https://aticco.com/wp-content/uploads/2023/06/exterior-urquinaona.jpg",
             "name": "Aticco Urquinaona",
             "address": "Rda. de Sant Pere, 52, Eixample, 08010 Barcelona, España",
             "link": "https://aticco.com/en/aticco-urquinaona/",
@@ -51,6 +58,7 @@
         },
         {
             "city": "barcelona",
+            "image": "https://www.happyworkinglab.com/wp-content/uploads/2019/09/BETAHAUS_web_2019_016.jpg",
             "name": "Betahaus Barcelona",
             "address": "Carrer de Vilafranca, 7, Gràcia, 08024 Barcelona, España",
             "link": "https://www.betahaus.es/",
@@ -58,6 +66,7 @@
         },
         {
             "city": "barcelona",
+            "image": "https://www.coworkbooking.com/images/1600!0/kapacita/7928/16-11.png",
             "name": "OneCoWork Plaça Catalunya",
             "address": "C/ d'Estruc, 9, Ciutat Vella, 08002 Barcelona, España",
             "link": "https://www.onecowork.com/en/locations/onecowork-placa-catalunya",

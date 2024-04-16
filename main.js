@@ -208,9 +208,10 @@ async function displayItems(category) {
     filteredItems.forEach(item => {
         displayHtml += `
             <div>
+                <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
                 <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a> | 
+                <a href="${item.link}" target="_blank">Website</a> 
                 <a href="${item.maps}" target="_blank">Maps</a>
             </div>
         `;
