@@ -204,16 +204,14 @@ async function displayItems(category) {
     const data = await fetchData();
     const items = data[category];
     const filteredItems = items.filter(item => item.city.toLowerCase() === cityName);  // Filtrar por ciudad
-    let displayHtml = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2><div class="card-container">`;
+    /*let displayHtml = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2><div class="card-container">`; */
     filteredItems.forEach(item => {
         displayHtml += `
-            <div class="card">
-                <div class="container">
-                    <h4><b>${item.name}</b></h4>
-                    <p>${item.address}</p>
-                    <a href="${item.link}" target="_blank">Website</a> | 
-                    <a href="${item.maps}" target="_blank">Maps</a>
-                </div>
+            <div>
+                <h3>${item.name}</h3>
+                <p>${item.address}</p>
+                <a href="${item.link}" target="_blank">Website</a> | 
+                <a href="${item.maps}" target="_blank">Maps</a>
             </div>
         `;
     });
