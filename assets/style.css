@@ -170,7 +170,6 @@
     .where button {
         border-radius: 48px;
         font-size: var(--font-size);
-        background-color: transparent;
         color: var(--black);
         padding: 8px 16px 8px 16px;
         border: solid 1px var(--black);
@@ -192,7 +191,6 @@
     .card-container img {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
-        max-height: 25%;
     }
 
     .data-section {
