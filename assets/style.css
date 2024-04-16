@@ -70,7 +70,7 @@
         font-style: italic;
     }
 
-    .displayArea a, .filter {
+    .card-container a, .filter {
         color: var(--blue);
         transition: 0.25s linear;
         background-color: transparent;
@@ -217,7 +217,7 @@
 
     /* text */
 
-    .displayArea a:hover {
+    .card-container a:hover {
         color: var(--red);
         transition: 0.25s linear;
     }
@@ -313,7 +313,7 @@
         gap: var(--gutter);
     }
 
-    .displayArea {
+    .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gutter);
