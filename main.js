@@ -223,7 +223,7 @@ async function displayItems(category) {
 
 // Helper function to set active button styling
 function setActiveButton(activeId) {
-    ['costButton', 'safetyButton', 'weatherButton', 'transportButton'].forEach(id => {
+    ['costButton', 'safetyButton', 'weatherButton', 'transportButton', 'coworkingsButton', 'restaurantsButton', 'hotelsButton', 'activitiesButton'].forEach(id => {
         document.getElementById(id).classList.remove('button-active');
     });
     document.getElementById(activeId).classList.add('button-active');
