@@ -199,26 +199,27 @@ async function fetchData() {
     return data;
 }
 
+
 async function displayItems(category) {
     const data = await fetchData();
     const items = data[category];
+    const filteredItems = items.filter(item => item.city.toLowerCase() === cityName);  // Filtrar por ciudad
     let displayHtml = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2><div class="card-container">`;
-    items.forEach(item => {
+    filteredItems.forEach(item => {
         displayHtml += `
             <div class="card">
                 <div class="container">
-                    <h4><b>${cityData.name}</b></h4>
-                    <p>${cityData.address}</p>
-                    <a href="${cityData.link}" target="_blank">Website</a> | 
-                    <a href="${cityData.maps}" target="_blank">Maps</a>
+                    <h4><b>${item.name}</b></h4>
+                    <p>${item.address}</p>
+                    <a href="${item.link}" target="_blank">Website</a> | 
+                    <a href="${item.maps}" target="_blank">Maps</a>
                 </div>
             </div>
         `;
     });
     displayHtml += '</div>';
-
-    document.getElementById('displayArea').innerHTML = displayHtml;
-}    
+    document.getElementById('displayArea').innerHTML = displayHtml;  // Asegúrate de que 'displayArea' es el ID correcto donde se debe mostrar el contenido
+}
 
 
 // Helper function to set active button styling

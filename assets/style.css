@@ -70,7 +70,7 @@
         font-style: italic;
     }
 
-    .resourceGrid a, .filter {
+    .displayArea a, .filter {
         color: var(--blue);
         transition: 0.25s linear;
         background-color: transparent;
@@ -177,7 +177,7 @@
         width: 100%;
     }
 
-    .resourceGrid div {
+    .displayArea div {
         width: 100%;
         padding: var(--gutter);
         border-radius: 12px;
@@ -217,7 +217,7 @@
 
     /* text */
 
-    .resourceGrid a:hover {
+    .displayArea a:hover {
         color: var(--red);
         transition: 0.25s linear;
     }
@@ -313,7 +313,7 @@
         gap: var(--gutter);
     }
 
-    .resourceGrid {
+    .displayArea {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gutter);
