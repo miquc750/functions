@@ -75,7 +75,7 @@ function getCity() {
 
 const cityName = getCity();  // Retrieve the city name when the script loads
 
-// Define an event to set up buttons after data has loaded
+// CITY buttons
 const setupButtons = (cityData) => {
     document.getElementById('costButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML =
@@ -175,8 +175,51 @@ document.addEventListener("DOMContentLoaded", async () => {
         setupButtons(cityData);
     }
 
-    fetchAndRenderItems();  // Optional, depends on what this function does
+    fetchAndRenderItems();
 });
+
+
+// 'where to' buttons
+
+document.getElementById('coworkingsButton').addEventListener('click', function() {
+    displayItems('coworkings');
+});
+
+document.getElementById('restaurantsButton').addEventListener('click', function() {
+    displayItems('restaurants');
+});
+
+document.getElementById('activitiesButton').addEventListener('click', function() {
+    displayItems('activities');
+});
+
+async function fetchData() {
+    const response = await fetch('data.json');
+    const data = await response.json();
+    return data;
+}
+
+async function displayItems(category) {
+    const data = await fetchData();
+    const items = data[category];
+    let displayHtml = `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2><div class="card-container">`;
+    items.forEach(item => {
+        displayHtml += `
+            <div class="card">
+                <div class="container">
+                    <h4><b>${cityData.name}</b></h4>
+                    <p>${cityData.address}</p>
+                    <a href="${cityData.link}" target="_blank">Website</a> | 
+                    <a href="${cityData.maps}" target="_blank">Maps</a>
+                </div>
+            </div>
+        `;
+    });
+    displayHtml += '</div>';
+
+    document.getElementById('displayArea').innerHTML = displayHtml;
+}    
+
 
 // Helper function to set active button styling
 function setActiveButton(activeId) {

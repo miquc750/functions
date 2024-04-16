@@ -1,13 +1,67 @@
 {
-    "restaurants": [
+    "coworkings": [
         {
-            "name": "la gaditana",
-            "city": "madrid"
+            "city": "madrid",
+            "name": "CentroCentro",
+            "address": "Plaza Cibeles, 1, Retiro, 28014",
+            "link": "https://www.centrocentro.org/",
+            "maps": "https://maps.app.goo.gl/vQE4nsqiKaBMPGB86"
         },
-
         {
-            "name": "los naranjos",
-            "city": "valencia"
+            "city": "madrid",
+            "name": "Freeland Coworking",
+            "address": "C. de Gandía, 1, local 9A, Retiro, 28007",
+            "link": "https://freeland.es/",
+            "maps": "https://maps.app.goo.gl/NdQk6KTeNn7zLLqZ6"
+        },
+        {
+            "city": "madrid",
+            "name": "Loom Salamanca",
+            "address": "Calle de Don Ramón de la Cruz, 38, Salamanca, 28001",
+            "link": "https://loom.es/espacios-coworking/madrid/loom-salamanca/",
+            "maps": "https://maps.app.goo.gl/xwjTWFV2Ybzh4upn6"
+        },
+        {
+            "city": "madrid",
+            "name": "Coworking La Fabrica",
+            "address": "Gta. de Quevedo, 9, 5°, Chamberí, 28015",
+            "link": "https://coworkinglafabrica.es/quevedo/",
+            "maps": "https://maps.app.goo.gl/SnPxL2Kv4BDFoWBL8"
+        },
+        {
+            "city": "madrid",
+            "name": "Cink Coworking",
+            "address": "P.º de la Castellana, 194, Chamartín, 28046",
+            "link": "https://cinkcoworking.es/",
+            "maps": "https://maps.app.goo.gl/Pz4w6bi3EbRVwvfc9"
+        },
+        {
+            "city": "barcelona",
+            "name": "Maui Beach Coworking",
+            "address": "Carrer del Perelló, 74, Sant Martí, 08005 Barcelona, España",
+            "link": "https://mauicowork.com/",
+            "maps": "https://maps.app.goo.gl/5Exq5aFe1yA8r23LA"
+        },
+        {
+            "city": "barcelona",
+            "name": "Aticco Urquinaona",
+            "address": "Rda. de Sant Pere, 52, Eixample, 08010 Barcelona, España",
+            "link": "https://aticco.com/en/aticco-urquinaona/",
+            "maps": "https://maps.app.goo.gl/qQkhcgTuQ72vafBK9"
+        },
+        {
+            "city": "barcelona",
+            "name": "Betahaus Barcelona",
+            "address": "Carrer de Vilafranca, 7, Gràcia, 08024 Barcelona, España",
+            "link": "https://www.betahaus.es/",
+            "maps": "https://maps.app.goo.gl/Sa7f1y7zDUXp5hvh8"
+        },
+        {
+            "city": "barcelona",
+            "name": "OneCoWork Plaça Catalunya",
+            "address": "C/ d'Estruc, 9, Ciutat Vella, 08002 Barcelona, España",
+            "link": "https://www.onecowork.com/en/locations/onecowork-placa-catalunya",
+            "maps": "https://maps.app.goo.gl/C71PmzEvTsPnCDD48"
         }
     ],
 
