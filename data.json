@@ -83,7 +83,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$734",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$257.11",
+            "costGroceries": "$256.79",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Valencia features warm summers with average temperatures around 30°C and minimal precipitation of 20mm, making it one of the warmer cities. Winters are mild with average temperatures of 12°C.",
             "weatherSummer": "79ºF",
@@ -105,7 +105,12 @@
             "transportationAirport": "102",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "2",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "8",
+            "scoreWeather": "7",
+            "scoreSecurity": "9",
+            "scoreTransportation": "7",
+            "scoreAverage": "7.75"
         },
         {
             "city": "madrid",
@@ -115,7 +120,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$831",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$284.31",
+            "costGroceries": "$283.96",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Madrid experiences hot summers with average temperatures peaking at 32°C and low precipitation (10mm), making it the hottest among the cities. Winter temperatures average at 5°C.",
             "weatherSummer": "78ºF",
@@ -137,7 +142,12 @@
             "transportationAirport": "207",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "2",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "5",
+            "scoreWeather": "5",
+            "scoreSecurity": "10",
+            "scoreTransportation": "10",
+            "scoreAverage": "7.5"
         },
         {
             "city": "malaga",
@@ -147,7 +157,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$737",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$252.00",
+            "costGroceries": "$251.69",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "The city is a sun-lover’s paradise with some of the warmest summers, averaging 31°C, and delightfully mild winters, which make it a favorite for tourists and residents year-round.",
             "weatherSummer": "79ºF",
@@ -169,7 +179,12 @@
             "transportationAirport": "154",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "1",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "4",
+            "scoreWeather": "9",
+            "scoreSecurity": "6",
+            "scoreTransportation": "9",
+            "scoreAverage": "7"
         },
         {
             "city": "barcelona",
@@ -179,7 +194,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$857",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$282.41",
+            "costGroceries": "$282.06",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Barcelona enjoys a temperate climate with summer temperatures averaging 29°C and winter temperatures around 14°C. It has moderate rainfall.",
             "weatherSummer": "76ºF",
@@ -201,7 +216,12 @@
             "transportationAirport": "205",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "1",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "9",
+            "scoreWeather": "10",
+            "scoreSecurity": "8",
+            "scoreTransportation": "6",
+            "scoreAverage": "8.25"
         },
         {
             "city": "sevilla",
@@ -211,7 +231,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$799",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$289.34",
+            "costGroceries": "$288.98",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Known for having the hottest summers in Spain with temperatures frequently soaring to 36°C, Sevilla is perfect for those who thrive in intense heat, though it may be overwhelming for others. Winters are notably mild.",
             "weatherSummer": "81ºF",
@@ -233,7 +253,12 @@
             "transportationAirport": "84",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "1",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "10",
+            "scoreWeather": "4",
+            "scoreSecurity": "7",
+            "scoreTransportation": "5",
+            "scoreAverage": "6.5"
         },
         {
             "city": "granada",
@@ -243,7 +268,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$774",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$274.71",
+            "costGroceries": "$274.37",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Granada offers a unique climate with hot summers, averaging 34°C, that are ideal for enjoying the nearby natural parks and winters that are cool, around 10°C, perfect for the cozy, cafe culture the city is famous for.",
             "weatherSummer": "77ºF",
@@ -265,7 +290,12 @@
             "transportationAirport": "9",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "1",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "7",
+            "scoreWeather": "6",
+            "scoreSecurity": "8",
+            "scoreTransportation": "4",
+            "scoreAverage": "6.25"
         },
         {
             "city": "gran-canaria",
@@ -275,7 +305,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$687",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$267.15",
+            "costGroceries": "$266.82",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "The island enjoys one of the best climates globally with mild temperatures year-round, rarely dipping below 18°C in winter or rising above 28°C in summer, which is perfect for beach enthusiasts and retirees.",
             "weatherSummer": "74ºF",
@@ -297,7 +327,12 @@
             "transportationAirport": "129",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "0",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "6",
+            "scoreWeather": "10",
+            "scoreSecurity": "7",
+            "scoreTransportation": "3",
+            "scoreAverage": "6.5"
         },
         {
             "city": "alicante",
@@ -307,7 +342,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$742",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$244.78",
+            "costGroceries": "$244.47",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Alicante's weather is quintessentially Mediterranean with warm, dry summers averaging 31°C and mild winters around 17°C. This climate attracts a significant number of northern European expats looking for a sunny retreat.",
             "weatherSummer": "80ºF",
@@ -329,7 +364,12 @@
             "transportationAirport": "138",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "1",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "9",
+            "scoreWeather": "8",
+            "scoreSecurity": "8",
+            "scoreTransportation": "6",
+            "scoreAverage": "7.75"
         },
         {
             "city": "palma",
@@ -339,7 +379,7 @@
             "costRentLabel": "monthly rent for a 1-bedroom in the city center",
             "costExpenses": "$872",
             "costExpensesLabel": "single person estimated monthly costs",
-            "costGroceries": "$267.15",
+            "costGroceries": "$266.82",
             "costGroceriesLabel": "average monthly groceries for one person",
             "weatherText": "Palma enjoys a pleasant Mediterranean climate with gentle summers averaging 30°C and soft, mild winters at 15°C. This makes Palma an attractive year-round destination.",
             "weatherSummer": "77ºF",
@@ -361,7 +401,12 @@
             "transportationAirport": "157",
             "transportationAirportLabel": "destinations from its main airport",
             "transportationTrain": "0",
-            "transportationTrainLabel": "inter-regional train stations"
+            "transportationTrainLabel": "inter-regional train stations",
+            "scoreCost": "6",
+            "scoreWeather": "9",
+            "scoreSecurity": "9",
+            "scoreTransportation": "8",
+            "scoreAverage": "8"
         }
     ]
 }

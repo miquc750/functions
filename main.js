@@ -12,7 +12,7 @@ var myRadarChart = new Chart(ctx, {
         labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
         datasets: [{
             label: 'Valencia',
-            data: [5, 8, 4, 7],
+            data: [${cityData.scoreCost}, ${cityData.scoreSafety}, ${cityData.scoreWeather}, ${cityData.scoreTransportation}],
             backgroundColor: 'transparent',
             borderColor: '#2376E4',
             borderWidth: 1

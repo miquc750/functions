@@ -167,7 +167,7 @@
         width: 100%;
     }
 
-    .where button {
+    #restaurantsButton, #coworkingsButton, #activitiesButton, #hotelsButton {
         border-radius: 48px;
         font-size: var(--font-size);
         color: var(--black);
