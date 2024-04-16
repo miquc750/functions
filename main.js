@@ -212,15 +212,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                         datasets: [{
                             label: cityData.city,
                             data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
-                            backgroundColor: 'transparent',
+                            backgroundColor: 'rgba(35, 118, 228, 0.6)',
                             borderColor: '#2376E4',
                             borderWidth: 1
                         },
                         {
-                            label: 'Madrid',
-                            data: [7, 6, 5, 9],
-                            backgroundColor: 'transparent',
-                            borderColor: '#F15211',
+                            label: 'average',
+                            data: [7.1, 7.6, 8, 6.4],
+                            backgroundColor: 'rgba(160, 183, 77, 0.6)',
+                            borderColor: '#A0B74D',
                             borderWidth: 1
                         }]
                     },
