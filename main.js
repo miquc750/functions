@@ -204,7 +204,7 @@ async function displayItems(category) {
     const data = await fetchData();
     const items = data[category];
     const filteredItems = items.filter(item => item.city.toLowerCase() === cityName);  // Filtrar por ciudad
-    let displayHtml = `<div class="card-container">`; */
+    let displayHtml = `<div class="card-container">`;
     filteredItems.forEach(item => {
         displayHtml += `
             <div>
