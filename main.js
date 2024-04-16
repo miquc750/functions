@@ -4,16 +4,6 @@ let markdownIt = document.createElement('script')
 markdownIt.src = 'https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.min.js'
 document.head.appendChild(markdownIt) */
 
-/* Access Airtable API
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'patyGtqiWtf3ypzpD.00631f93c77f8bb3f8c7b45f64a6a2b3d72575b51bac2e679507666590ac875a'}).base('appBL5bDGDsHFNRAh');
-
-base('cities').find('recr9qxyXRNQD7QNa', function(err, record) {
-    if (err) { console.error(err); return; }
-    console.log('Retrieved', record.id);
-});
-*/
-
 // Fetch and display all items from data.json
 const fetchAndRenderItems = async () => {
     try {
@@ -212,14 +202,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                         datasets: [{
                             label: cityData.city,
                             data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
-                            backgroundColor: 'rgba(35, 118, 228, 0.6)',
+                            backgroundColor: 'rgba(35, 118, 228, 0.5)',
                             borderColor: '#2376E4',
                             borderWidth: 1
                         },
                         {
                             label: 'average',
                             data: [7.1, 7.6, 8, 6.4],
-                            backgroundColor: 'rgba(160, 183, 77, 0.6)',
+                            backgroundColor: 'rgba(160, 183, 77, 0.5)',
                             borderColor: '#A0B74D',
                             borderWidth: 1
                         }]

@@ -1,4 +1,628 @@
-{
+{   
+    "hotels": [
+        {
+            "city": "madrid",
+            "image": "https://res.cloudinary.com/di7bguxca/image/upload/v1709064302/es/olavide12/cohabs-house-olavide12-07615-coliving-madrid-staged-bedroom-lifestyle-interiordesign-hero.jpg",
+            "name": "Cohabs Olavide",
+            "address": "C. de Sta. Feliciana, 12, Chamberí, 28010",
+            "link": "https://cohabs.com/cities/madrid/houses/olavide-12",
+            "maps": "https://maps.app.goo.gl/v9wSXPPxwNkNgqPr5"
+        },
+        {
+            "city": "madrid",
+            "image": "https://node-living.com/wp-content/uploads/2023/10/Habitacion-17-Foto-2.jpg",
+            "name": "Node Living Tetuan",
+            "address": "C. de Ofelia Nieto, 39, Moncloa - Aravaca, 28039",
+            "link": "https://node-living.com/es/hubs-es/node-sanchez-preciados-es/",
+            "maps": "https://maps.app.goo.gl/pm4pvQELMHp7DyJ98"
+        },
+        {
+            "city": "madrid",
+            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507344151.jpg?k=0cba898feaafa6124c9abfc564aa629b44cf7c26bfd924881d330811a8fb095f&o=&hp=1",
+            "name": "Be Casa Valdebebas",
+            "address": "Av. Manuel Fraga Iribarne, 141, Hortaleza, 28055",
+            "link": "https://www.becasaapartments.com/en/apartments-madrid/valdebebas",
+            "maps": "https://maps.app.goo.gl/QQwfBeKT6cW5UCCeA"
+        },
+        {
+            "city": "madrid",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "barcelona",
+            "image": "https://node-living.com/wp-content/uploads/2023/10/parc-guell-boutique-1.jpg",
+            "name": "Node Sant Antoni Boutique",
+            "address": "Diputacion 118 3º 2ª Dcha, 08015",
+            "link": "https://node-living.com/buildings/node-sant-antoni/",
+            "maps": "https://maps.app.goo.gl/TPTBKyCrC11bzfrq5"
+        },
+        {
+            "city": "barcelona",
+            "image": "https://img3.idealista.com/blur/WEB_LISTING-M/0/id.pro.es.image.master/5a/7e/27/1223735532.jpg",
+            "name": "Enso Coliving",
+            "address": "Passatge Hercegovina, 14, Sarrià-Sant Gervasi, 08006",
+            "link": "https://ensocoliving.com/apartments/barcelona/hercegovina-14-barcelona",
+            "maps": "https://maps.app.goo.gl/JrE6gT8xi4hvmzk9A"
+        },
+        {
+            "city": "barcelona",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "barcelona",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        }
+    ],
+
+    "restaurants": [
+        {
+            "city": "madrid",
+            "image": "https://madriddiferente.com/wp-content/uploads/2022/03/MALACATIN-cocido-en-tres-vuelcos-770x466.jpg",
+            "name": "Malacatin",
+            "dish": "Cocido",
+            "price": "$$",
+            "address": "C. de la Ruda, 5, Centro, 28005",
+            "link": "https://malacatin.com/",
+            "maps": "https://maps.app.goo.gl/rZ5QHiywek81T3Ub6"
+        },
+        {
+            "city": "madrid",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/b4/ea/88/chocolate-con-churros.jpg",
+            "name": "Chocolateria San Gines",
+            "dish": "Churros con chocolate",
+            "price": "$",
+            "address": "Pasadizo de San Ginés, 5, Centro, 28013",
+            "link": "https://chocolateriasangines.com/",
+            "maps": "https://maps.app.goo.gl/KA7gTDPPav97iHnbA"
+        },
+        {
+            "city": "madrid",
+            "image": "https://www.telemadrid.es/2014/10/24/programas/un-plan-perfecto/croquetas-bacalao-Casa-Labra_1622857705_14713695_1300x731.jpg",
+            "name": "Casa Labra",
+            "dish": "Bacalao rebozado",
+            "price": "$",
+            "address": "C. de Tetuán, 12, Centro, 28013",
+            "link": "http://www.casalabra.es/",
+            "maps": "https://maps.app.goo.gl/EugJ8Pxm8fyaVdbc8"
+        },
+        {
+            "city": "barcelona",
+            "image": "https://live.staticflickr.com/633/22305442144_93cae1b032_b.jpg",
+            "name": "El Xampanyet",
+            "dish": "Cava",
+            "price": "$$",
+            "address": "C/ de Montcada, 22, Ciutat Vella, 08003",
+            "link": null,
+            "maps": "https://maps.app.goo.gl/6yVoyTp75ES4CqrX6"
+        },
+        {
+            "city": "barcelona",
+            "image": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2019/03/29/5e998341bca59.jpeg",
+            "name": "Bodega Amposta",
+            "dish": "Fuet",
+            "price": "$",
+            "address": "Carrer d'Amposta, 1, Sants-Montjuïc, 08004",
+            "link": "https://www.bodegaamposta.com/",
+            "maps": "https://maps.app.goo.gl/yRXhBC1KEzKzoMVb7"
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null,
+            "dish": null,
+            "price": null,
+            "address": null,
+            "link": null,
+            "maps": null
+        }
+    ],
+    
     "coworkings": [
         {
             "city": "madrid",
@@ -71,6 +695,194 @@
             "address": "C/ d'Estruc, 9, Ciutat Vella, 08002 Barcelona, España",
             "link": "https://www.onecowork.com/en/locations/onecowork-placa-catalunya",
             "maps": "https://maps.app.goo.gl/C71PmzEvTsPnCDD48"
+        }
+    ],
+
+    "activities": [
+        {
+            "city": "madrid",
+            "image": "https://www.patrimonionacional.es/sites/default/files/styles/file_entity_browser_thumbnail/public/2020-05/01-biblioteca_el_escorial.jpg?itok=XWuy7gmo",
+            "name": "Monasterio del Escorial"
+        },
+        {
+            "city": "madrid",
+            "image": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/12/04/16386429290798.jpg",
+            "name": "Tour Santiago Bernabeu"
+        },
+        {
+            "city": "madrid",
+            "image": "https://phantom-elmundo.unidadeditorial.es/93008784d32c1327c1671b2732038f2c/crop/0x0/2029x2914/assets/multimedia/imagenes/2022/02/14/16448372686030.jpg",
+            "name": "Palacio de Cristal"
+        },
+        {
+            "city": "madrid",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "madrid",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "barcelona",
+            "image": "https://www.casabatllo.es/wp-content/uploads/1899/12/parc-guell.jpg",
+            "name": "Parc Güell"
+        },
+        {
+            "city": "barcelona",
+            "image": "https://cdn.kastatic.org/ka-perseus-images/804452d7386c14c5af604e6626d30643e7ff5788.jpg",
+            "name": "Sagrada Familia"
+        },
+        {
+            "city": "barcelona",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "barcelona",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "valencia",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "malaga",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "sevilla",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "granada",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "gran-canaria",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "alicante",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null
+        },
+        {
+            "city": "palma",
+            "image": null,
+            "name": null
         }
     ],
 
