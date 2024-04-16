@@ -199,7 +199,7 @@ function setActiveButton(activeId) {
 
 document.addEventListener("DOMContentLoaded", async () => {
     const data = await fetch('data.json').then(res => res.json());
-    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);  // Find the specific city data
+    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
 
     if (cityData) {
         setupButtons(cityData);
@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     data: {
                         labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
                         datasets: [{
-                            label: 'Valencia',
-                            data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                            label: cityData.city,
+                            data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
                             backgroundColor: 'transparent',
                             borderColor: '#2376E4',
                             borderWidth: 1
