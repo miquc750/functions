@@ -325,6 +325,55 @@
         gap: var(--gutter);
     }
 
+    .navMenu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navMenu ul {
+        background-color: var(--blue);
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gutter);
+        position: fixed;
+        bottom: var(--gutter);
+        padding: var(--gutter);
+    }
+
+    .navMenu a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navMenu p {
+        margin-bottom: 0;
+        opacity: 0;
+        max-width: 0;
+        text-wrap: nowrap;
+        transition: 0.75s linear;
+    }
+
+    .navMenu a:hover p {
+        opacity: 1;
+        max-width: unset;
+        transition: 0.75s linear;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: var(--white);
+        border-radius: 100%;
+    }
+
+    .navMenu a:hover .dot {
+        opacity:0;
+        transition: 0.75s ease;
+    }
+
     /* components */
 
     button:hover {
