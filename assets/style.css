@@ -332,12 +332,13 @@
     }
 
     .navMenu ul {
-        background-color: var(--blue);
+        background-color: var(--white);
+        color: var(--black);
         border-radius: 24px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: var(--gutter);
+        gap: calc(var(--gutter)*2);
         position: fixed;
         bottom: var(--gutter);
         padding: var(--gutter);
@@ -346,6 +347,8 @@
     .navMenu a {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .navMenu p {
@@ -365,7 +368,7 @@
     .dot {
         width: 12px;
         height: 12px;
-        background-color: var(--white);
+        background-color: var(--black);
         border-radius: 100%;
     }
 
