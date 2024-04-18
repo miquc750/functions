@@ -210,10 +210,16 @@
         font-weight: 800;
     }
 
-    .header-menu img {
-        width: 24px;
-        height: 24px;
+    .socials {
+        max-width: 24px;
+        max-height: 24px;
         filter: grayscale(100) brightness(300%);
+    }
+
+    .logo {
+        height: 64px;
+        min-width: 64px;
+        display: block;
     }
 
 
@@ -238,7 +244,7 @@
         align-items: center;
     }
 
-    .header-menu img:hover {
+    .socials:hover {
         filter: unset;
         transition: 0.3s linear;
     }
@@ -246,8 +252,9 @@
     .header-menu ul {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        align-items: center;
         gap: 25%;
+        min-width: 25%;
     }
 
     .home-menu {
