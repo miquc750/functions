@@ -5,6 +5,10 @@ markdownIt.src = 'https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-
 document.head.appendChild(markdownIt) */
 
 // Fetch and display all items from data.json
+function renderItems(data) {
+    console.log(data); 
+}
+
 const fetchAndRenderItems = async () => {
     try {
         const response = await fetch('data.json');
@@ -246,10 +250,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 let addScrolling = () => {
     let scrollClass = 'scroll';
     let scrollBlocks = document.querySelectorAll('.block');
+    console.log(scrollBlocks); 
 
     scrollBlocks.forEach((block) => {
         let sectionObserver = new IntersectionObserver((entries) => {
             let [entry] = entries;
+            console.log(entry);
 
             if (entry.isIntersecting) {
                 block.classList.add(scrollClass);
@@ -258,7 +264,7 @@ let addScrolling = () => {
             }
         }, {
             root: null,
-            rootMargin: '0% 0% -25% 0%',
+            rootMargin: '0% 0% -10% 0%',
         });
 
         sectionObserver.observe(block);
