@@ -1,18 +1,16 @@
 /* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @font-face {
     font-family: 'against';
     src: url('fonts/against.otf') format('otf');
 }
 
-@font-face {
-    font-family: 'clinton';
-    src: url('fonts/clinton');
-}
 
 /* setting up variables */
 
 :root {
-    --font-size: 14px;
+    --font-size: 18px;
     --font-weight: 400;
     --gutter: 16px;
     --black: #001E08;
@@ -22,7 +20,7 @@
     --green: #A0B74D;
     --yellow: #F7C600;
     --font-display: 'against';
-    --font: 'clinton';
+    --font: 'DM Sans';
 }
 
 /* mobile */
@@ -56,10 +54,12 @@
 
     p {
         margin-bottom: var(--gutter);
+        font-family: var(--font);
     }
 
     html {
         font-family: var(--font);
+        font-size: var(--font-size);
     }
     
     strong {
@@ -80,6 +80,7 @@
     footer p {
         text-align: center;
         color: var(--white);
+        background-color: var(--blue);
     }
 
     .banner p {
@@ -88,17 +89,17 @@
 
     /* sections */ 
 
-    header {
-        position: fixed;
-        width: 100%;
-        top: 0px;
-        color: var(--white);
-        z-index: 1;
-        /* add mobile version */
+    html {
+        background-color: var(--yellow);
     }
 
-    html {
+    main {
         background-color: var(--blue);
+    }
+
+    header {
+        position: sticky;
+        top: 0;
     }
 
     footer {
@@ -107,6 +108,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        background-color: var(--blue);
     }
 
     .cover {
@@ -236,12 +238,46 @@
 
     /* sections */
 
+    .intro {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter);
+        align-items: start;
+        justify-content: center;
+        background-color: var(--blue);
+        padding-left: 10%;
+        border: 5px solid var(--yellow);
+        outline: 5px solid var(--white);
+        box-shadow: 0px 0px 0px 10px var(--red);
+        margin: 10px;
+    }
+
+    .intro h1 {
+        font-size: 64px;
+        position:static;
+        text-align: left;
+        color: var(--yellow);
+    }
+
+    .intro p {
+        font-size: 20px;
+        color: var(--white);
+        max-width: 45%;
+    }
+
     .header-menu {
+        position: sticky;
+        top: 0px;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        padding: calc(var(--gutter)*2);
+        padding-left: calc(var(--gutter)*2);
+        padding-right: calc(var(--gutter)*2);
+        padding-top: var(--gutter);
         justify-content: space-between;
         align-items: center;
+        color: var(--white);
     }
 
     .socials:hover {
@@ -249,12 +285,36 @@
         transition: 0.3s linear;
     }
 
-    .header-menu ul {
+    .highlight {
+        font-family: var(--font-display);
+    }
+
+    .header-menu li {
+        min-width: fit-content;
+    }
+
+    li.highlight {
+        height: 64px;
+        min-width: 64px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--white);
+    }
+
+    .header-menu section {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 25%;
-        min-width: 25%;
+        min-width: max-content;
+        gap: 32px;
+        padding: 32px 64px 32px 64px;
+        /*border-top-left-radius: 1000px;
+        border-top-right-radius: 1000px;
+        border: 5px solid var(--yellow);
+        outline: 5px solid var(--white);
+        background-color: var(--blue);*/
     }
 
     .home-menu {
