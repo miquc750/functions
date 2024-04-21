@@ -274,3 +274,16 @@ let addScrolling = () => {
 document.addEventListener('DOMContentLoaded', function() {
     addScrolling();
 });
+
+
+// Loading state
+document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementsByClassName('loadingOverlay');
+    const content = document.getElementById('content');
+
+    // Simulate a delay to load content (e.g., fetching data)
+    setTimeout(() => {
+        overlay.style.display = 'none';
+        content.style.display = 'block';
+    }, 2000); // Adjust time as necessary
+});
