@@ -249,6 +249,7 @@
 
     .intro {
         height: 100vh;
+        margin-top: -5%;
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(9, 1fr);
