@@ -240,3 +240,31 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             fetchAndRenderItems();
         });
+
+// Scroll animations
+
+let addScrolling = () => {
+    let scrollClass = 'scroll';
+    let scrollBlocks = document.querySelectorAll('.block');
+
+    scrollBlocks.forEach((block) => {
+        let sectionObserver = new IntersectionObserver((entries) => {
+            let [entry] = entries;
+
+            if (entry.isIntersecting) {
+                block.classList.add(scrollClass);
+            } else {
+                block.classList.remove(scrollClass);
+            }
+        }, {
+            root: null,
+            rootMargin: '0% 0% -25% 0%',
+        });
+
+        sectionObserver.observe(block);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    addScrolling();
+});
