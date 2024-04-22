@@ -127,10 +127,29 @@ const setupButtons = (cityData) => {
     });
 };
 
+// Additional function to set up buttons related to places
+function setupCategoryButtons() {
+    document.getElementById('restaurantsButton').addEventListener('click', () => {
+        displayItems('restaurants');
+    });
+
+    document.getElementById('hotelsButton').addEventListener('click', () => {
+        displayItems('hotels');
+    });
+
+    document.getElementById('activitiesButton').addEventListener('click', () => {
+        displayItems('activities');
+    });
+
+    document.getElementById('coworkingsButton').addEventListener('click', () => {
+        displayItems('coworkings');
+    });
+}
+
 // Helper function to set active button styling
 function setActiveButton(activeId) {
     const buttonIds = [
-        'costButton', 'safetyButton', 'weatherButton', 'transportButton', 
+        'costButton', 'safetyButton', 'weatherButton', 'transportButton',
         'coworkingsButton', 'restaurantsButton', 'hotelsButton', 'activitiesButton'
     ];
 
@@ -164,7 +183,7 @@ async function displayItems(category) {
 
 // Initial setup when the document is ready
 document.addEventListener("DOMContentLoaded", async () => {
-    const overlay = document.getElementsByClassName('loadingOverlay')[0];  // Asegúrate de acceder al primer elemento
+    const overlay = document.getElementsByClassName('loadingOverlay')[0];  // Make sure to access the first element
     const content = document.getElementById('content');
 
     // Simulate a delay to load content
@@ -183,6 +202,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (cityData) {
         setupButtons(cityData);
+        setupCategoryButtons();  // Set up additional category buttons
         fetchAndRenderItems();  // Fetch and render items from data.json
     }
 });
