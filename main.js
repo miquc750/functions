@@ -1,35 +1,50 @@
-/* This allows us to process/render the descriptions, which are in Markdown!
-// More about Markdown: https://en.wikipedia.org/wiki/Markdown
-let markdownIt = document.createElement('script')
-markdownIt.src = 'https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.min.js'
-document.head.appendChild(markdownIt) */
+// Define the function to add scrolling animations
+let addScrolling = () => {
+    let scrollClass = 'scroll';
+    let scrollBlocks = document.querySelectorAll('.block');
+
+    scrollBlocks.forEach((block) => {
+        let sectionObserver = new IntersectionObserver((entries) => {
+            let [entry] = entries;
+
+            if (entry.isIntersecting) {
+                block.classList.add(scrollClass);
+            } else {
+                block.classList.remove(scrollClass);
+            }
+        }, {
+            root: null,
+            rootMargin: '0% 0% -10% 0%',
+        });
+
+        sectionObserver.observe(block);
+    });
+};
 
 // Fetch and display all items from data.json
 function renderItems(data) {
-    console.log(data); 
+    console.log(data);
 }
 
 const fetchAndRenderItems = async () => {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
-        renderItems(data);  // Consider what to do with this renderItems
+        renderItems(data);
     } catch (error) {
         console.error('Error loading data:', error);
     }
-}
+};
 
-// Correctly identify the city from the URL
+// Retrieve the city name from the URL
 function getCity() {
     const currentURL = window.location.pathname;
     const currentURLSplit = currentURL.split("/");
-    const cityName = currentURLSplit[currentURLSplit.length - 1].toLowerCase();  // Ensure consistency in comparison
+    const cityName = currentURLSplit[currentURLSplit.length - 1].toLowerCase();
     return cityName;
 }
 
-const cityName = getCity();  // Retrieve the city name when the script loads
-
-// CITY buttons
+// Setup city-specific buttons and add event listeners
 const setupButtons = (cityData) => {
     document.getElementById('costButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML =
@@ -47,9 +62,7 @@ const setupButtons = (cityData) => {
                     <p class="data">${cityData.costGroceries}</p>
                     <p>${cityData.costGroceriesLabel}</p>
                 </li>
-            </ul>
-            `
-            ;
+            </ul>`;
         setActiveButton('costButton');
     });
 
@@ -69,9 +82,7 @@ const setupButtons = (cityData) => {
                     <p class="data">${cityData.securityMurder}</p>
                     <p>${cityData.securityMurderLabel}</p>
                 </li>
-            </ul>
-            `
-            ;
+            </ul>`;
         setActiveButton('safetyButton');
     });
 
@@ -91,93 +102,30 @@ const setupButtons = (cityData) => {
                     <p class="data">${cityData.weatherRain}</p>
                     <p>${cityData.weatherRainLabel}</p>
                 </li>
-            </ul>
-            `
-            ;
+            </ul>`;
         setActiveButton('weatherButton');
     });
 
     document.getElementById('transportButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML = 
             `<p>${cityData.transportationText}</p>
-                <ul class="data-section">
-                    <li class="data-pill">
-                        <p class="data">${cityData.transportationMetro}</p>
-                        <p>${cityData.transportationMetroLabel}</p>
-                    </li>
-                    <li class="data-pill">
-                        <p class="data">${cityData.transportationAirport}</p>
-                        <p>${cityData.transportationAirportLabel}</p>
-                    </li>
-                    <li class="data-pill">
-                        <p class="data">${cityData.transportationTrain}</p>
-                        <p>${cityData.transportationTrainLabel}</p>
-                    </li>
-                </ul>
-            `
-            ;
+            <ul class="data-section">
+                <li class="data-pill">
+                    <p class="data">${cityData.transportationMetro}</p>
+                    <p>${cityData.transportationMetroLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.transportationAirport}</p>
+                    <p>${cityData.transportationAirportLabel}</p>
+                </li>
+                <li class="data-pill">
+                    <p class="data">${cityData.transportationTrain}</p>
+                    <p>${cityData.transportationTrainLabel}</p>
+                </li>
+            </ul>`;
         setActiveButton('transportButton');
     });
-}
-
-// Change initialization of data and buttons
-document.addEventListener("DOMContentLoaded", async () => {
-    const data = await fetch('data.json').then(res => res.json());
-    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);  // Find the specific city data
-
-    if (cityData && cityName === "madrid") {
-        setupButtons(cityData);
-    }
-
-    fetchAndRenderItems();
-});
-
-
-// 'where to' buttons
-
-document.getElementById('coworkingsButton').addEventListener('click', function() {
-    displayItems('coworkings');
-});
-
-document.getElementById('restaurantsButton').addEventListener('click', function() {
-    displayItems('restaurants');
-});
-
-document.getElementById('hotelsButton').addEventListener('click', function() {
-    displayItems('hotels');
-});
-
-document.getElementById('activitiesButton').addEventListener('click', function() {
-    displayItems('activities');
-});
-
-async function fetchData() {
-    const response = await fetch('data.json');
-    const data = await response.json();
-    return data;
-}
-
-
-async function displayItems(category) {
-    const data = await fetchData();
-    const items = data[category];
-    const filteredItems = items.filter(item => item.city.toLowerCase() === cityName);  // Filtrar por ciudad
-    let displayHtml = `<div class="card-container">`;
-    filteredItems.forEach(item => {
-        displayHtml += `
-            <div>
-                <img src="${item.image}" alt="${item.name}">
-                <h3>${item.name}</h3>
-                <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a> 
-                <a href="${item.maps}" target="_blank">Maps</a>
-            </div>
-        `;
-    });
-    displayHtml += '</div>';
-    document.getElementById('displayArea').innerHTML = displayHtml;  // Asegúrate de que 'displayArea' es el ID correcto donde se debe mostrar el contenido
-}
-
+};
 
 // Helper function to set active button styling
 function setActiveButton(activeId) {
@@ -193,97 +141,48 @@ function setActiveButton(activeId) {
     document.getElementById(activeId).classList.add('button-active');
 }
 
-// Chart
-
-document.addEventListener("DOMContentLoaded", async () => {
+// Fetch data and display items based on category
+async function displayItems(category) {
     const data = await fetch('data.json').then(res => res.json());
+    const items = data[category];
+    const filteredItems = items.filter(item => item.city.toLowerCase() === getCity());
+    let displayHtml = `<div class="card-container">`;
+    filteredItems.forEach(item => {
+        displayHtml += `
+            <div>
+                <img src="${item.image}" alt="${item.name}">
+                <h3>${item.name}</h3>
+                <p>${item.address}</p>
+                <a href="${item.link}" target="_blank">Website</a>
+                <a href="${item.maps}" target="_blank">Maps</a>
+            </div>
+        `;
+    });
+    displayHtml += '</div>';
+    document.getElementById('displayArea').innerHTML = displayHtml;
+}
+
+// Initial setup when the document is ready
+document.addEventListener("DOMContentLoaded", async () => {
+    const overlay = document.getElementsByClassName('loadingOverlay')[0];  // Asegúrate de acceder al primer elemento
+    const content = document.getElementById('content');
+
+    // Simulate a delay to load content
+    setTimeout(() => {
+        if (overlay) {
+            overlay.style.display = 'none';
+        }
+        if (content) {
+            content.style.display = 'block';
+        }
+    }, 2000);
+
+    const data = await fetch('data.json').then(res => res.json());
+    const cityName = getCity();
     const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
 
     if (cityData) {
         setupButtons(cityData);
-
-        var ctx = document.getElementById('myRadarChart').getContext('2d');
-                var myRadarChart = new Chart(ctx, {
-                    type: 'radar',
-                    data: {
-                        labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
-                        datasets: [{
-                            label: cityData.city,
-                            data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
-                            backgroundColor: 'rgba(35, 118, 228, 0.5)',
-                            borderColor: '#2376E4',
-                            borderWidth: 1
-                        },
-                        {
-                            label: 'average',
-                            data: [7.1, 7.6, 8, 6.4],
-                            backgroundColor: 'rgba(160, 183, 77, 0.5)',
-                            borderColor: '#A0B74D',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        elements: {
-                            line: {
-                                borderWidth: 3
-                            }
-                        },
-                        scales: {
-                            r: {
-                                beginAtZero: true,
-                                angleLines: {
-                                    display: false
-                                },
-                                suggestedMin: 0,
-                                suggestedMax: 10
-                            }
-                        }
-                    }
-                });
-            }
-
-            fetchAndRenderItems();
-        });
-
-// Scroll animations
-
-let addScrolling = () => {
-    let scrollClass = 'scroll';
-    let scrollBlocks = document.querySelectorAll('.block');
-    console.log(scrollBlocks); 
-
-    scrollBlocks.forEach((block) => {
-        let sectionObserver = new IntersectionObserver((entries) => {
-            let [entry] = entries;
-            console.log(entry);
-
-            if (entry.isIntersecting) {
-                block.classList.add(scrollClass);
-            } else {
-                block.classList.remove(scrollClass);
-            }
-        }, {
-            root: null,
-            rootMargin: '0% 0% -10% 0%',
-        });
-
-        sectionObserver.observe(block);
-    });
-};
-
-document.addEventListener('DOMContentLoaded', function() {
-    addScrolling();
-});
-
-
-// Loading state
-document.addEventListener("DOMContentLoaded", function() {
-    const overlay = document.getElementsByClassName('loadingOverlay');
-    const content = document.getElementById('content');
-
-    // Simulate a delay to load content (e.g., fetching data)
-    setTimeout(() => {
-        overlay.style.display = 'none';
-        content.style.display = 'block';
-    }, 2000); // Adjust time as necessary
+        fetchAndRenderItems();  // Fetch and render items from data.json
+    }
 });
