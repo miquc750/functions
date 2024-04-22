@@ -268,6 +268,7 @@
     .datapill {
         display: flex;
         flex-direction: column;
+        padding-right: var(--gutter);
         margin-top: calc(var(--gutter)*2);
     }
 
@@ -551,11 +552,11 @@
         gap: var(--gutter);
     }
 
-    .card-container:nth-child(even) {
+    .card-container div:nth-child(even) {
         background-color: var(--yellow);
     } 
 
-    .card-container:nth-child(odd) {
+    .card-container div:nth-child(odd) {
         background-color: var(--green);
     } 
 
