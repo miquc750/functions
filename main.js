@@ -168,7 +168,7 @@ async function displayItems(category) {
     let displayHtml = `<div class="card-container">`;
     filteredItems.forEach(item => {
         displayHtml += `
-            <div>
+            <div class="block">
                 <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
                 <p>${item.address}</p>
