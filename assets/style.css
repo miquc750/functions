@@ -260,7 +260,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         margin-top: calc(var(--gutter)*4);
-        gap: calc(var(--gutter)*4);
+        gap: 3%;
     }
 
     .datapill {
@@ -555,6 +555,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        z-index: 2;
     }
 
     .navMenu ul {
