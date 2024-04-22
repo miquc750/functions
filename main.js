@@ -110,15 +110,15 @@ const setupButtons = (cityData) => {
         document.getElementById('infoContent').innerHTML = 
             `<p>${cityData.transportationText}</p>
             <ul class="data-section">
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.transportationMetro}</p>
                     <p>${cityData.transportationMetroLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.transportationAirport}</p>
                     <p>${cityData.transportationAirportLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.transportationTrain}</p>
                     <p>${cityData.transportationTrainLabel}</p>
                 </li>
