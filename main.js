@@ -131,18 +131,22 @@ const setupButtons = (cityData) => {
 function setupCategoryButtons() {
     document.getElementById('restaurantsButton').addEventListener('click', () => {
         displayItems('restaurants');
+        setActiveButton('restaurantsButton');
     });
 
     document.getElementById('hotelsButton').addEventListener('click', () => {
         displayItems('hotels');
+        setActiveButton('hotelsButton');
     });
 
     document.getElementById('activitiesButton').addEventListener('click', () => {
         displayItems('activities');
+        setActiveButton('activitiesButton');
     });
 
     document.getElementById('coworkingsButton').addEventListener('click', () => {
         displayItems('coworkings');
+        setActiveButton('coworkingsButton');
     });
 }
 
