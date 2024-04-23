@@ -448,14 +448,14 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin-top: calc(var(--gutter)*3);
-        gap: 32px;
+        gap: var(--gutter);
     }
 
     .datapill {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: calc(var(--gutter)*2);
+        margin-top: var(--gutter);
         padding: var(--gutter);
         border: 1px solid var(--black);
         border-radius: 16px;
@@ -494,6 +494,16 @@
 
     button p {
         display: none;
+    }
+
+    #myRadarChart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        padding: var(--gutter);
+        border-radius: 16px;
     }
 
     /* animations */
@@ -726,13 +736,6 @@
     #myRadarChart {
         max-width: 560px;
         max-height: 560px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--white);
-        padding: var(--gutter);
-        border-radius: 16px;
     }
 
     .where ul {
@@ -825,5 +828,9 @@
     .city button, .where button {
         padding: 8px 16px 8px 16px;
         width: 100%;
+    }
+
+    .datapill {
+        margin-top: calc(var(--gutter)*2);
     }
 }
