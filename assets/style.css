@@ -226,8 +226,7 @@
         background-color: var(--black);
     }
 
-    .cover-madrid {
-        background-image: url('https://miquc750.github.io/functions/assets/img/Madrid-cover-bw.png');
+    .cover-madrid, .cover-valencia {
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -236,6 +235,42 @@
         overflow: hidden;
         padding: 0;
         width: 100%;
+    }
+
+    .cover-madrid {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Madrid-cover.png');
+    }
+
+    .cover-valencia {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Valencia-cover.png');
+    }
+
+    .cover-barcelona {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Barcelona-cover.png');
+    }
+
+    .cover-malaga {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Malaga-cover.png');
+    }
+
+    .cover-sevilla {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Sevilla-cover.png');
+    }
+
+    .cover-granada {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Granada-cover.png');
+    }
+
+    .cover-palma {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Palma-cover.png');
+    }
+
+    .cover-alicante {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Alicante-cover.png');
+    }
+
+    .cover-gran-canaria {
+        background-image: url('https://miquc750.github.io/functions/assets/img/Gran-canaria-cover.png');
     }
 
     .banner {
