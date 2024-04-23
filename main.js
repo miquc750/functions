@@ -56,15 +56,15 @@ const setupButtons = (cityData) => {
         document.getElementById('infoContent').innerHTML = 
             `<p>${cityData.securityText}</p>
             <ul class="data-section">
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.securityCrime}</p>
                     <p>${cityData.securityCrimeLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.safetyIndex}</p>
                     <p>${cityData.safetyIndexLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.securityMurder}</p>
                     <p>${cityData.securityMurderLabel}</p>
                 </li>
@@ -76,15 +76,15 @@ const setupButtons = (cityData) => {
         document.getElementById('infoContent').innerHTML = 
             `<p>${cityData.weatherText}</p>
             <ul class="data-section">
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.weatherSummer}</p>
                     <p>${cityData.weatherSummerLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.weatherWinter}</p>
                     <p>${cityData.weatherWinterLabel}</p>
                 </li>
-                <li class="data-pill">
+                <li class="datapill">
                     <p class="data">${cityData.weatherRain}</p>
                     <p>${cityData.weatherRainLabel}</p>
                 </li>
