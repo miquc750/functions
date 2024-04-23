@@ -210,7 +210,7 @@ const setupChart = async () => {
                     labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
                     datasets: [{
                         label: cityData.city,
-                        data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                        data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
                         backgroundColor: 'rgba(35, 118, 228, 0.2)',
                         borderColor: '#2376E4',
                         borderWidth: 1
