@@ -827,11 +827,23 @@
     }
 
     .city button, .where button {
-        padding: 8px 16px 8px 16px;
+        padding: 0 16px 0 16px;
         width: 100%;
+        max-height: 3em;
     }
 
     .datapill {
         margin-top: calc(var(--gutter)*2);
+    }
+
+    button img{
+        display: none;
+    }
+
+    button p {
+        display: unset;
+        text-wrap: nowrap;
+        margin-bottom: 0;
+        font-size: var(--font-size);
     }
 }
