@@ -141,7 +141,7 @@
     }
 
     .cover-madrid {
-        background-image: url('/assets/img/Madrid-cover-bw.png');
+        background-image: url('https://miquc750.github.io/functions/assets/img/Madrid-cover-bw.png');
         background-size: cover;
         display: flex;
         flex-direction: column;
