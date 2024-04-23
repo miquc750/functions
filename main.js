@@ -134,16 +134,19 @@ function setupCategoryButtons() {
 
 async function displayItems(category) {
     try {
+        const cityName = getCity();
         const response = await fetch('data.json');
         const data = await response.json();
         const items = data[category];
+        const filteredItems = items.filter(item => item.city.toLowerCas() === cityName);
+
         let displayHtml = items.map(item => `
             <div class="block">
-                <img src="${cityData.item.image}" alt="${cityData.item.name}">
-                <h3>${cityData.item.name}</h3>
-                <p>${cityData.item.address}</p>
-                <a href="${cityData.item.link}" target="_blank">Website</a>
-                <a href="${cityData.item.maps}" target="_blank">Maps</a>
+                <img src="${item.image}" alt="${cityData.item.name}">
+                <h3>${item.name}</h3>
+                <p>${item.address}</p>
+                <a href="${item.link}" target="_blank">Website</a>
+                <a href="${item.maps}" target="_blank">Maps</a>
             </div>
         `).join('');
         document.getElementById('displayArea').innerHTML = displayHtml;
