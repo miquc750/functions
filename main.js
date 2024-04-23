@@ -1,101 +1,38 @@
-// Chart
+// RETRIEVE CITY NAME FROM URL
+const getCity = () => {
+    const currentURL = window.location.pathname;
+    const currentURLSplit = currentURL.split("/");
+    return currentURLSplit[currentURLSplit.length - 1].toLowerCase();
+};
 
+// LOADING STATE
 document.addEventListener("DOMContentLoaded", async () => {
-    const data = await fetch('data.json').then(res => res.json());
-    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);  // Find the specific city data
+    const overlay = document.getElementsByClassName('loadingOverlay')[0];
+    const content = document.getElementById('content');
+
+    setTimeout(() => {
+        if (overlay) {
+            overlay.style.display = 'none';
+        }
+        if (content) {
+            content.style.display = 'block';
+        }
+    }, 2000);
+
+    const cityName = getCity();
+    const response = await fetch('data.json');
+    const data = await response.json();
+    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
 
     if (cityData) {
         setupButtons(cityData);
-        var ctx = document.getElementById('myRadarChart').getContext('2d');
-                var myRadarChart = new Chart(ctx, {
-                    type: 'radar',
-                    data: {
-                        labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
-                        datasets: [{
-                            label: 'Valencia',
-                            data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
-                            backgroundColor: 'transparent',
-                            borderColor: '#2376E4',
-                            borderWidth: 1
-                        },
-                        {
-                            label: 'Madrid',
-                            data: [7, 6, 5, 9],
-                            backgroundColor: 'transparent',
-                            borderColor: '#F15211',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        elements: {
-                            line: {
-                                borderWidth: 3
-                            }
-                        },
-                        scales: {
-                            r: {
-                                beginAtZero: true,
-                                angleLines: {
-                                    display: false
-                                },
-                                suggestedMin: 0,
-                                suggestedMax: 10
-                            }
-                        }
-                    }
-                });
-            }
-            
-            fetchAndRenderItems();
-        });
-
-// Define the function to add scrolling animations
-let addScrolling = () => {
-    let scrollClass = 'scroll';
-    let scrollBlocks = document.querySelectorAll('.block');
-
-    scrollBlocks.forEach((block) => {
-        let sectionObserver = new IntersectionObserver((entries) => {
-            let [entry] = entries;
-
-            if (entry.isIntersecting) {
-                block.classList.add(scrollClass);
-            } else {
-                block.classList.remove(scrollClass);
-            }
-        }, {
-            root: null,
-            rootMargin: '0% 0% -10% 0%',
-        });
-
-        sectionObserver.observe(block);
-    });
-};
-
-// Fetch and display all items from data.json
-function renderItems(data) {
-    console.log(data);
-}
-
-const fetchAndRenderItems = async () => {
-    try {
-        const response = await fetch('data.json');
-        const data = await response.json();
-        renderItems(data);
-    } catch (error) {
-        console.error('Error loading data:', error);
+        fetchAndRenderItems(); 
+        setupChart(cityData); 
+        setupCategoryButtons();  
     }
-};
+});
 
-// Retrieve the city name from the URL
-function getCity() {
-    const currentURL = window.location.pathname;
-    const currentURLSplit = currentURL.split("/");
-    const cityName = currentURLSplit[currentURLSplit.length - 1].toLowerCase();
-    return cityName;
-}
-
-// Setup city-specific buttons and add event listeners
+// CITY BUTTONS
 const setupButtons = (cityData) => {
     document.getElementById('costButton').addEventListener('click', () => {
         document.getElementById('infoContent').innerHTML =
@@ -178,7 +115,31 @@ const setupButtons = (cityData) => {
     });
 };
 
-// Additional function to set up buttons related to places
+// WHERE TO BUTTONS
+const displayItems = async (category) => {
+    try {
+        const data = await fetch('data.json').then(res => res.json());
+        const items = data[category];
+        const filteredItems = items.filter(item => item.city.toLowerCase() === getCity());
+        let displayHtml = `<div class="card-container">`;
+        filteredItems.forEach(item => {
+            displayHtml += `
+                <div class="block">
+                    <img src="${item.image}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p>${item.address}</p>
+                    <a href="${item.link}" target="_blank">Website</a>
+                    <a href="${item.maps}" target="_blank">Maps</a>
+                </div>
+            `;
+        });
+        displayHtml += '</div>';
+        document.getElementById('displayArea').innerHTML = displayHtml;
+    } catch (error) {
+        console.error('Error fetching or processing data:', error);
+    }
+};
+
 function setupCategoryButtons() {
     document.getElementById('restaurantsButton').addEventListener('click', () => {
         displayItems('restaurants');
@@ -201,8 +162,8 @@ function setupCategoryButtons() {
     });
 }
 
-// Helper function to set active button styling
-function setActiveButton(activeId) {
+// ACTIVE STATE
+const setActiveButton = (activeId) => {
     const buttonIds = [
         'costButton', 'safetyButton', 'weatherButton', 'transportButton',
         'coworkingsButton', 'restaurantsButton', 'hotelsButton', 'activitiesButton'
@@ -213,35 +174,64 @@ function setActiveButton(activeId) {
     });
 
     document.getElementById(activeId).classList.add('button-active');
-}
+};
 
-// Fetch data and display items based on category
-async function displayItems(category) {
-    const data = await fetch('data.json').then(res => res.json());
-    const items = data[category];
-    const filteredItems = items.filter(item => item.city.toLowerCase() === getCity());
-    let displayHtml = `<div class="card-container">`;
-    filteredItems.forEach(item => {
-        displayHtml += `
-            <div class="block">
-                <img src="${item.image}" alt="${item.name}">
-                <h3>${item.name}</h3>
-                <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a>
-                <a href="${item.maps}" target="_blank">Maps</a>
-            </div>
-        `;
+// CHART
+const setupChart = (cityData) => {
+    const ctx = document.getElementById('myRadarChart').getContext('2d');
+    const myRadarChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
+            datasets: [{
+                label: cityName,
+                data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                backgroundColor: 'rgba(35, 118, 228, 0.2)',
+                borderColor: '#2376E4',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            elements: {
+                line: {
+                    borderWidth: 3
+                }
+            },
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    angleLines: {
+                        display: false
+                    },
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                }
+            }
+        }
     });
-    displayHtml += '</div>';
-    document.getElementById('displayArea').innerHTML = displayHtml;
-}
+};
 
-// Initial setup when the document is ready
+// FETCH ITEMS FROM DATA.JSON
+const renderItems = (data) => {
+    console.log(data);
+};
+
+const fetchAndRenderItems = async () => {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        renderItems(data);
+    } catch (error) {
+        console.error('Error loading data:', error);
+    }
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
-    const overlay = document.getElementsByClassName('loadingOverlay')[0];  // Make sure to access the first element
+    const overlay = document.getElementsByClassName('loadingOverlay')[0];
     const content = document.getElementById('content');
 
-    // Simulate a delay to load content
     setTimeout(() => {
         if (overlay) {
             overlay.style.display = 'none';
@@ -251,13 +241,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }, 2000);
 
-    const data = await fetch('data.json').then(res => res.json());
     const cityName = getCity();
+    const response = await fetch('data.json');
+    const data = await response.json();
     const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
 
     if (cityData) {
         setupButtons(cityData);
-        setupCategoryButtons();  // Set up additional category buttons
         fetchAndRenderItems();  // Fetch and render items from data.json
     }
 });
