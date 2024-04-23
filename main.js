@@ -145,8 +145,10 @@ async function displayItems(category) {
                 <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
                 <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a>
-                <a href="${item.maps}" target="_blank">Maps</a>
+                <section class="links">
+                    <a href="${item.link}" target="_blank">Website</a>
+                    <a href="${item.maps}" target="_blank">Maps</a>
+                </section>
             </div>
         `).join('');
         document.getElementById('displayArea').innerHTML = displayHtml;

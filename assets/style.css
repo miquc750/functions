@@ -69,11 +69,19 @@
         font-style: italic;
     }
 
-    #displayArea a, .filter {
+    .filter {
         color: var(--blue);
+        font-weight: 700;
         transition: 0.25s linear;
         background-color: transparent;
         padding: 0;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     footer p {
@@ -172,7 +180,7 @@
         color: var(--yellow);
     }
 
-    .banner button {
+    .banner button, .links a {
         background-color: var(--black);
         color: var(--white);
         padding: var(--gutter) calc(var(--gutter)*1.5) var(--gutter) calc(var(--gutter)*1.5);
