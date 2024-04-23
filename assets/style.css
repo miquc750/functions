@@ -223,10 +223,17 @@
     #displayArea div {
         width: 100%;
         padding: var(--gutter);
+        border: 1px solid var(--black);
+        color: var(--black);
         border-radius: 12px;
         display: flex;
         flex-direction: column;
         gap: var(--gutter);
+    }
+
+    #displayArea div:hover {
+        background-color: var(--red);
+        border: unset;
     }
 
     #displayArea img {
@@ -535,16 +542,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gutter);
     }
-
-    #displayArea div:nth-child(even) {
-        background-color: var(--red);
-        color: white;
-    } 
-
-    #displayArea div:nth-child(odd) {
-        background-color: var(--red);
-        color: white;
-    } 
 
     .navMenu {
         align-items: center;
