@@ -241,6 +241,9 @@
         flex-direction: column;
         width: 100%;
         margin-top: calc(var(--gutter)*2);
+        padding: var(--gutter);
+        border: 1px solid var(--black);
+        border-radius: 16px;
     }
 
     .data {
@@ -519,17 +522,20 @@
     }
 
     #displayArea {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gutter);
     }
 
     #displayArea div:nth-child(even) {
-        background-color: var(--yellow);
+        background-color: var(--red);
+        color: white;
     } 
 
     #displayArea div:nth-child(odd) {
-        background-color: var(--green);
+        background-color: var(--red);
+        color: white;
     } 
 
     .navMenu {
