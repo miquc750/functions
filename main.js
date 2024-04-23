@@ -139,7 +139,7 @@ async function displayItems(category) {
         const items = data[category];
         let displayHtml = items.map(item => `
             <section class="card-container">
-                <div class="card">
+                <div>
                     <img src="${item.image}" alt="${item.name}">
                     <h3>${item.name}</h3>
                     <p>${item.address}</p>
@@ -206,13 +206,12 @@ const setupChart = (cityData) => {
                     borderWidth: 1
                 },
                 {
-                    label: average,
+                    label: 'Average',
                     data: [7.1, 7.6, 8, 6.4],
                     backgroundColor: 'rgba(241, 82, 17, 0.2)',
                     borderColor: '#F15211',
                     borderWidth: 1
-                }
-            ]
+                }]
             },
             options: {
                 elements: {
@@ -229,6 +228,17 @@ const setupChart = (cityData) => {
                         ticks: {
                             suggestedMin: 0,
                             suggestedMax: 10
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 14
+                            }
                         }
                     }
                 }
