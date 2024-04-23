@@ -138,12 +138,12 @@ async function displayItems(category) {
         const data = await response.json();
         const items = data[category];
         let displayHtml = items.map(item => `
-            <div>
-                <img src="${item.image}" alt="${item.name}">
-                <h3>${item.name}</h3>
-                <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a>
-                <a href="${item.maps}" target="_blank">Maps</a>
+            <div class="block">
+                <img src="${cityData.item.image}" alt="${cityData.item.name}">
+                <h3>${cityData.item.name}</h3>
+                <p>${cityData.item.address}</p>
+                <a href="${cityData.item.link}" target="_blank">Website</a>
+                <a href="${cityData.item.maps}" target="_blank">Maps</a>
             </div>
         `).join('');
         document.getElementById('displayArea').innerHTML = displayHtml;
@@ -209,14 +209,14 @@ const setupChart = async () => {
                     datasets: [{
                         label: cityData.city,
                         data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
-                        backgroundColor: 'rgba(35, 118, 228, 0.2)',
+                        backgroundColor: 'rgba(35, 118, 228, 0.5)',
                         borderColor: '#2376E4',
                         borderWidth: 1
                     },
                     {
                         label: 'average',
                         data: [7.1, 7.6, 8, 6.4],
-                        backgroundColor: 'rgba(241, 82, 17, 0.2)',
+                        backgroundColor: 'rgba(241, 82, 17, 0.5)',
                         borderColor: '#F15211',
                         borderWidth: 1
                     }]

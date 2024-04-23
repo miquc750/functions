@@ -195,7 +195,7 @@
         width: 100%;
     }
 
-    .city:first-child {
+    .citymenu {
         display: flex;
         flex-direction: row;
         gap: var(--gutter);
@@ -233,7 +233,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         margin-top: calc(var(--gutter)*4);
-        gap: 56px;
+        gap: 32px;
     }
 
     .datapill {
