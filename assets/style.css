@@ -101,7 +101,17 @@
         align-items: center;
         font-size: 2em;
         z-index: 1000;
+        animation: loading 3s;
     }
+
+        @keyframes loading {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
 
     html {
         background-color: var(--black);

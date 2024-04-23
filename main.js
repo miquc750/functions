@@ -141,29 +141,43 @@ const setupButtons = (cityData) => {
 };
 
 // WHERE TO BUTTONS
-const displayItems = async (category) => {
+document.addEventListener('DOMContentLoaded', function() {
+    setupCategoryButtons();
+});
+
+function setupCategoryButtons() {
+    const buttonIds = ['restaurantsButton', 'hotelsButton', 'activitiesButton', 'coworkingsButton'];
+    buttonIds.forEach(id => {
+        const button = document.getElementById(id);
+        if (button) {
+            button.addEventListener('click', function() {
+                displayItems(id.replace('Button', 's'));
+            });
+        } else {
+            console.error(`Button with ID ${id} not found.`);
+        }
+    });
+}
+
+async function displayItems(category) {
     try {
-        const data = await fetch('data.json').then(res => res.json());
+        const response = await fetch('data.json');
+        const data = await response.json();
         const items = data[category];
-        const filteredItems = items.filter(item => item.city.toLowerCase() === getCity());
-        let displayHtml = `<div class="card-container">`;
-        filteredItems.forEach(item => {
-            displayHtml += `
-                <div class="block">
-                    <img src="${item.image}" alt="${item.name}">
-                    <h3>${item.name}</h3>
-                    <p>${item.address}</p>
-                    <a href="${item.link}" target="_blank">Website</a>
-                    <a href="${item.maps}" target="_blank">Maps</a>
-                </div>
-            `;
-        });
-        displayHtml += '</div>';
+        let displayHtml = items.map(item => `
+            <div class="card">
+                <img src="${item.image}" alt="${item.name}">
+                <h3>${item.name}</h3>
+                <p>${item.address}</p>
+                <a href="${item.link}" target="_blank">Website</a>
+                <a href="${item.maps}" target="_blank">Maps</a>
+            </div>
+        `).join('');
         document.getElementById('displayArea').innerHTML = displayHtml;
     } catch (error) {
         console.error('Error fetching or processing data:', error);
     }
-};
+}
 
 function setupCategoryButtons() {
     document.getElementById('restaurantsButton').addEventListener('click', () => {
@@ -203,39 +217,43 @@ const setActiveButton = (activeId) => {
 
 // CHART
 const setupChart = (cityData) => {
-    const ctx = document.getElementById('myRadarChart').getContext('2d');
-    const myRadarChart = new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
-            datasets: [{
-                label: cityName,
-                data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
-                backgroundColor: 'rgba(35, 118, 228, 0.2)',
-                borderColor: '#2376E4',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            elements: {
-                line: {
-                    borderWidth: 3
-                }
+    if (cityData) {
+        const ctx = document.getElementById('myRadarChart').getContext('2d');
+        const myRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
+                datasets: [{
+                    label: cityData.city,
+                    data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                    backgroundColor: 'rgba(35, 118, 228, 0.2)',
+                    borderColor: '#2376E4',
+                    borderWidth: 1
+                }]
             },
-            scales: {
-                r: {
-                    beginAtZero: true,
-                    angleLines: {
-                        display: false
-                    },
-                    ticks: {
-                        suggestedMin: 0,
-                        suggestedMax: 10
+            options: {
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        angleLines: {
+                            display: false
+                        },
+                        ticks: {
+                            suggestedMin: 0,
+                            suggestedMax: 10
+                        }
                     }
                 }
             }
-        }
-    });
+        });
+    } else {
+        console.error("No data available to display chart");
+    }
 };
 
 // FETCH ITEMS FROM DATA.JSON
