@@ -191,61 +191,63 @@ const setActiveButton = (activeId) => {
 };
 
 // CHART
-const setupChart = (cityData) => {
-    if (cityData) {
-        const ctx = document.getElementById('myRadarChart').getContext('2d');
-        const myRadarChart = new Chart(ctx, {
-            type: 'radar',
-            data: {
-                labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
-                datasets: [{
-                    label: cityData.city,
-                    data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
-                    backgroundColor: 'rgba(35, 118, 228, 0.2)',
-                    borderColor: '#2376E4',
-                    borderWidth: 1
+document.addEventListener("DOMContentLoaded", function() {
+    setupChart();
+});
+
+const setupChart = async () => {
+    const cityName = getCity();
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
+
+        if (cityData) {
+            const ctx = document.getElementById('myRadarChart').getContext('2d');
+            const myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
+                    datasets: [{
+                        label: cityData.city,
+                        data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                        backgroundColor: 'rgba(35, 118, 228, 0.2)',
+                        borderColor: '#2376E4',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Average',  // Datos promedio ejemplo
+                        data: [7.1, 7.6, 8, 6.4],
+                        backgroundColor: 'rgba(241, 82, 17, 0.2)',
+                        borderColor: '#F15211',
+                        borderWidth: 1
+                    }]
                 },
-                {
-                    label: 'Average',
-                    data: [7.1, 7.6, 8, 6.4],
-                    backgroundColor: 'rgba(241, 82, 17, 0.2)',
-                    borderColor: '#F15211',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                elements: {
-                    line: {
-                        borderWidth: 3
-                    }
-                },
-                scales: {
-                    r: {
-                        beginAtZero: true,
-                        angleLines: {
-                            display: false
-                        },
-                        ticks: {
-                            suggestedMin: 0,
-                            suggestedMax: 10
+                options: {
+                    elements: {
+                        line: {
+                            borderWidth: 3
                         }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top',
-                        labels: {
-                            font: {
-                                size: 14
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            angleLines: {
+                                display: false
+                            },
+                            ticks: {
+                                suggestedMin: 0,
+                                suggestedMax: 10
                             }
                         }
                     }
                 }
-            }
-        });
-    } else {
-        console.error("No data available to display chart");
+            });
+        } else {
+            console.error("City data not found for the chart");
+        }
+    } catch (error) {
+        console.error('Error fetching or processing data:', error);
     }
 };
 
