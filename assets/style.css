@@ -274,12 +274,13 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         margin-top: calc(var(--gutter)*4);
-        gap: 10%;
+        gap: 56px;
     }
 
     .datapill {
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding-right: var(--gutter);
         margin-top: calc(var(--gutter)*2);
     }
