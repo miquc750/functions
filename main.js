@@ -138,11 +138,11 @@ async function displayItems(category) {
         const response = await fetch('data.json');
         const data = await response.json();
         const items = data[category];
-        const filteredItems = items.filter(item => item.city.toLowerCas() === cityName);
+        const filteredItems = items.filter(item => item.city.toLowerCase() === cityName);
 
-        let displayHtml = items.map(item => `
+        let displayHtml = filteredItems.map(item => `
             <div class="block">
-                <img src="${item.image}" alt="${cityData.item.name}">
+                <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
                 <p>${item.address}</p>
                 <a href="${item.link}" target="_blank">Website</a>
