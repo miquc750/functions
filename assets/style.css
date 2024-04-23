@@ -53,6 +53,7 @@
     p {
         margin-bottom: var(--gutter);
         font-family: var(--font);
+        line-height: 1.25;
     }
 
     html {
@@ -80,7 +81,8 @@
     .links {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-around;
+        gap: var(--gutter);
         align-items: center;
     }
 
@@ -180,7 +182,7 @@
         color: var(--yellow);
     }
 
-    .banner button, .links a {
+    .banner a, .links a {
         background-color: var(--black);
         color: var(--white);
         padding: var(--gutter) calc(var(--gutter)*1.5) var(--gutter) calc(var(--gutter)*1.5);
@@ -234,6 +236,7 @@
     #displayArea div:hover {
         background-color: var(--red);
         border: unset;
+        transition: 0.5s linear;
     }
 
     #displayArea img {
@@ -247,7 +250,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        margin-top: calc(var(--gutter)*4);
+        margin-top: calc(var(--gutter)*3);
         gap: 32px;
     }
 
@@ -297,7 +300,8 @@
     /* text */
 
     #displayArea a:hover {
-        color: var(--red);
+        background-color: var(--red);
+        font-weight: 700;
         transition: 0.25s linear;
     }
 
