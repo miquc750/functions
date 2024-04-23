@@ -101,15 +101,16 @@
         align-items: center;
         font-size: 2em;
         z-index: 1000;
+        display: none;
         animation: loading 3s;
     }
 
         @keyframes loading {
             0% {
-                opacity: 1;
+                display: block;
             }
             100% {
-                opacity: 0;
+                display: none;
             }
         }
 

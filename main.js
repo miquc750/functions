@@ -165,13 +165,15 @@ async function displayItems(category) {
         const data = await response.json();
         const items = data[category];
         let displayHtml = items.map(item => `
-            <div class="card">
-                <img src="${item.image}" alt="${item.name}">
-                <h3>${item.name}</h3>
-                <p>${item.address}</p>
-                <a href="${item.link}" target="_blank">Website</a>
-                <a href="${item.maps}" target="_blank">Maps</a>
-            </div>
+            <section class="card-container">
+                <div class="card">
+                    <img src="${item.image}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p>${item.address}</p>
+                    <a href="${item.link}" target="_blank">Website</a>
+                    <a href="${item.maps}" target="_blank">Maps</a>
+                </div>
+            </section>
         `).join('');
         document.getElementById('displayArea').innerHTML = displayHtml;
     } catch (error) {
