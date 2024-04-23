@@ -69,7 +69,7 @@
         font-style: italic;
     }
 
-    .card-container a, .filter {
+    #displayArea a, .filter {
         color: var(--blue);
         transition: 0.25s linear;
         background-color: transparent;
@@ -206,7 +206,7 @@
         width: 100%;
     }
 
-    .card-container div {
+    #displayArea div {
         width: 100%;
         padding: var(--gutter);
         border-radius: 12px;
@@ -215,7 +215,7 @@
         gap: var(--gutter);
     }
 
-    .card-container img {
+    #displayArea img {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         height: 25vh;
@@ -273,7 +273,7 @@
 
     /* text */
 
-    .card-container a:hover {
+    #displayArea a:hover {
         color: var(--red);
         transition: 0.25s linear;
     }
@@ -519,17 +519,17 @@
         gap: var(--gutter);
     }
 
-    .card-container {
+    #displayArea {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gutter);
     }
 
-    .card-container div:nth-child(even) {
+    #displayArea div:nth-child(even) {
         background-color: var(--yellow);
     } 
 
-    .card-container div:nth-child(odd) {
+    #displayArea div:nth-child(odd) {
         background-color: var(--green);
     } 
 
