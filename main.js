@@ -5,33 +5,6 @@ const getCity = () => {
     return currentURLSplit[currentURLSplit.length - 1].toLowerCase();
 };
 
-// LOADING STATE
-document.addEventListener("DOMContentLoaded", async () => {
-    const overlay = document.getElementsByClassName('loadingOverlay')[0];
-    const content = document.getElementById('content');
-
-    setTimeout(() => {
-        if (overlay) {
-            overlay.style.display = 'none';
-        }
-        if (content) {
-            content.style.display = 'block';
-        }
-    }, 2000);
-
-    const cityName = getCity();
-    const response = await fetch('data.json');
-    const data = await response.json();
-    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);
-
-    if (cityData) {
-        setupButtons(cityData);
-        fetchAndRenderItems(); 
-        setupChart(cityData); 
-        setupCategoryButtons();  
-    }
-});
-
 //SCROLL ANIMATION
 let addScrolling = () => {
     let scrollClass = 'scroll';
@@ -227,11 +200,19 @@ const setupChart = (cityData) => {
                 labels: ['Cost of Living', 'Safety', 'Weather', 'Transportation'],
                 datasets: [{
                     label: cityData.city,
-                    data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                    data: [cityData.scoreCost, cityData.scoreSecurity, cityData.scoreWeather, cityData.scoreTransportation],
                     backgroundColor: 'rgba(35, 118, 228, 0.2)',
                     borderColor: '#2376E4',
                     borderWidth: 1
-                }]
+                },
+                {
+                    label: average,
+                    data: [7.1, 7.6, 8, 6.4],
+                    backgroundColor: 'rgba(241, 82, 17, 0.2)',
+                    borderColor: '#F15211',
+                    borderWidth: 1
+                }
+            ]
             },
             options: {
                 elements: {
