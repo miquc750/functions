@@ -141,8 +141,7 @@
     }
 
     .cover-madrid {
-        background-image: linear-gradient(to bottom right, rgba(0, 30, 8, 0.9), rgba(0, 30, 8, 0.85)),
-        url('/assets/img/Madrid-cover-bw.png');
+        background-image: url('/assets/img/Madrid-cover-bw.png');
         background-size: cover;
         display: flex;
         flex-direction: column;
