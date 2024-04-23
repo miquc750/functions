@@ -145,6 +145,7 @@
         height: 95vh;
         padding: 0;
         background-image: linear-gradient(to bottom right, rgba(0, 30, 8, 0.9), rgba(0, 30, 8, 0.5));
+        background-image: url('/assets/img/Madrid-cover-bw.png');
         background-size: cover;
         z-index: 0;
         display: flex;
@@ -152,52 +153,6 @@
         justify-content: end;
         overflow: hidden;
     }
-    
-    .cover-madrid::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/assets/img/Madrid-cover-bw.svg');
-        background-size: cover;
-        transition: opacity 1s linear;
-        opacity: 1;
-        z-index: -1;
-    }
-    
-    .cover-madrid:hover::before {
-        opacity: 0;
-    }
-
-    .cover-madrid::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/assets/img/Madrid-cover.svg');
-        background-size: cover;
-        opacity: 0;
-        transition: opacity 1s linear;
-        z-index: -2;
-    }
-
-    .cover-madrid:hover h1 {
-        color: var(--black);
-        text-shadow: 4px 4px 4px var(--black);
-        transition: 2s linear;
-    }
-    
-    .cover-madrid:hover::after {
-        opacity: 1;
-    }
-
-    /* until here */
-
-
 
     .banner {
         padding: 15% 20% 5% 20%;   
