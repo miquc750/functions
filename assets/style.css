@@ -195,6 +195,12 @@
         width: 100%;
     }
 
+    .city:first-child {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gutter);
+    }
+
     #restaurantsButton, #coworkingsButton, #activitiesButton, #hotelsButton {
         border-radius: 48px;
         font-size: var(--font-size);

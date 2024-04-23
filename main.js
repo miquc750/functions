@@ -214,7 +214,7 @@ const setupChart = async () => {
                         borderWidth: 1
                     },
                     {
-                        label: 'Average',  // Datos promedio ejemplo
+                        label: 'average',
                         data: [7.1, 7.6, 8, 6.4],
                         backgroundColor: 'rgba(241, 82, 17, 0.2)',
                         borderColor: '#F15211',
