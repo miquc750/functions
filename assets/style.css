@@ -226,7 +226,7 @@
         background-color: var(--black);
     }
 
-    .cover-madrid, .cover-valencia {
+    .cover-madrid, .cover-valencia,.cover-barcelona, .cover-sevilla, .cover-alicante, .cover-granada, .cover-gran-canaria, .cover-palma, .cover-malaga {
         background-size: cover;
         display: flex;
         flex-direction: column;
