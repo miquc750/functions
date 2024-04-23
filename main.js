@@ -1,3 +1,54 @@
+// Chart
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const data = await fetch('data.json').then(res => res.json());
+    const cityData = data.cities.find(c => c.city.toLowerCase() === cityName);  // Find the specific city data
+
+    if (cityData) {
+        setupButtons(cityData);
+        var ctx = document.getElementById('myRadarChart').getContext('2d');
+                var myRadarChart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Cost of living', 'Safety', 'Weather', 'Transportation'],
+                        datasets: [{
+                            label: 'Valencia',
+                            data: [cityData.scoreCost, cityData.scoreSafety, cityData.scoreWeather, cityData.scoreTransportation],
+                            backgroundColor: 'transparent',
+                            borderColor: '#2376E4',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Madrid',
+                            data: [7, 6, 5, 9],
+                            backgroundColor: 'transparent',
+                            borderColor: '#F15211',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        elements: {
+                            line: {
+                                borderWidth: 3
+                            }
+                        },
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                angleLines: {
+                                    display: false
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 10
+                            }
+                        }
+                    }
+                });
+            }
+            
+            fetchAndRenderItems();
+        });
+
 // Define the function to add scrolling animations
 let addScrolling = () => {
     let scrollClass = 'scroll';
