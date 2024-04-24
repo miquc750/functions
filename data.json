@@ -41,14 +41,6 @@
             "maps": "https://maps.app.goo.gl/JrE6gT8xi4hvmzk9A"
         },
         {
-            "city": "barcelona",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
             "city": "valencia",
             "image": "https://img3.idealista.com/blur/WEB_LISTING-M/0/id.pro.es.image.master/2d/46/ff/939071004.jpg",
             "name": "MyCO Living",
@@ -744,47 +736,47 @@
         },
         {
             "city": "gran-canaria",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Puerto-de-Mogan-que-ver-en-gran-canaria-imprescindible.jpg",
+            "image": "https://www.hellocanaryislands.com/sites/default/files/styles/16_9_desktop/public/resources/header_images/Mogan_0159-cab-D.jpg?itok=rugJGxF2",
             "name": "Mogan Port"
         },
         {
             "city": "gran-canaria",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Dunas-de-Maspalomas-que-ver-en-Gran-canaria-imprescindible.jpg",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhg8Svk9T79Ggum8JyEdVCWFZ0XgyQYvjVXkGxnfhiQ&s",
             "name": "Maspalomas"
         },
         {
             "city": "gran-canaria",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Playa-Las-Canteras-que-ver-en-Gran-canaria-imprescindible.jpg",
+            "image": "https://www.hellocanaryislands.com/sites/default/files/styles/16_9_desktop/public/resources/header_images/Cabecera-desktop-Las-Canteras_0.jpg?itok=DOtke8Tz",
             "name": "Canteras Beach"
         },
         {
             "city": "alicante",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/plaza-luceros-que-ver-en-alicante.jpg",
+            "image": "https://alicante.vectalia.es/wp-content/uploads/sites/2/2017/08/Luceros-principal-1024x649.jpg",
             "name": "Plaza Luceros"
         },
         {
             "city": "alicante",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/explanada-que-visitar-en-alicante.jpg",
+            "image": "https://alicanteturismo.com/wp-content/uploads/2023/10/Explanada-de-Espa%C3%B1a-chica-comiendo-helado-1024x683.jpg",
             "name": "Explanada"
         },
         {
             "city": "alicante",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/puerto-alicante.jpg",
+            "image": "https://creative.es/wp-content/uploads/2023/07/IMG_1262.jpg",
             "name": "Port"
         },
         {
             "city": "palma",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/2020/05/catedral-palma-mallorca.jpg",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kathedrale_von_Palma.jpg/1200px-Kathedrale_von_Palma.jpg",
             "name": "Cathedral"
         },
         {
             "city": "palma",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/palacio-real-almudaina.jpg",
+            "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/79/d0.jpg",
             "name": "Almudaina Royal Palace"
         },
         {
             "city": "palma",
-            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/hort-del-rei-palma.jpg",
+            "image": "https://abcmallorcastorage.blob.core.windows.net/images/2020/05/hort-del-rei-palma-01.jpg",
             "name": "S'Hort del Rei"
         }
     ],
