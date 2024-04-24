@@ -32,9 +32,31 @@
         font-size: 20vw;
         text-align: center;
         margin-bottom: -5.5%;
+        max-width: 100%;
+        bottom: -64px;
+        color: var(--yellow);
+    }
+
+    #midh1 {
+        font-family: var(--font-display);
+        font-size: 16vw;
+        text-align: center;
+        margin-bottom: -0.5%;
         width: 100%;
         bottom: -64px;
         color: var(--yellow);
+        line-height: 1;
+    }
+
+    #smallh1 {
+        font-family: var(--font-display);
+        font-size: 11vw;
+        text-align: center;
+        margin-bottom: -0.5%;
+        width: 100%;
+        bottom: -64px;
+        color: var(--yellow);
+        line-height: 1;
     }
 
     .intro h1 {
