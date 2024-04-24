@@ -374,7 +374,7 @@
     #displayArea {
         display: flex;
         flex-direction: column;
-        gap: 10%;
+        gap: calc(var(--gutter)*2);
     }
 
     /* components */
