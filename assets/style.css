@@ -108,6 +108,7 @@
         justify-content:start;
         gap: var(--gutter);
         align-items: center;
+        flex-wrap: wrap;
     }
 
     footer p {
@@ -179,6 +180,7 @@
     header {
         position: sticky;
         top: 0;
+        z-index: 1000;
     }
 
     .header-menu {
@@ -747,6 +749,7 @@
         width: 100%;
         gap: calc(var(--gutter)*4);
         align-items: start;
+        padding: 0;
     }
 
     .city {
@@ -774,7 +777,7 @@
     #displayArea {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
         gap: var(--gutter);
     }
     
