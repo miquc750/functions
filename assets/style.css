@@ -463,8 +463,8 @@
 
     .data-section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         margin-top: calc(var(--gutter)*3);
         gap: var(--gutter);
     }
@@ -472,16 +472,22 @@
     .datapill {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+        min-width: none;
+        text-wrap: wrap;
         margin-top: var(--gutter);
         padding: var(--gutter);
         border: 1px solid var(--black);
         border-radius: 16px;
+        text-wrap: wrap;
     }
 
     .data {
         font-size: calc(var(--font-size)*3);
         font-weight: 800;
+        max-width: 100%;
+        word-wrap: break-word;
+        line-height: 1;
     }
 
     .socials {
@@ -744,7 +750,7 @@
     }
 
     .city {
-        width: 100%;
+        max-width: 60vw;
     }
 
     .city-radar {
@@ -755,8 +761,8 @@
     }
 
     #myRadarChart {
-        width: 40%;
-        height: auto;
+        max-width: 30vw;
+        max-height: 30vw;
     }
 
     .where ul {
@@ -785,6 +791,7 @@
     .citymenu {
         justify-content: start;
         gap: var(--gutter);
+        flex-wrap: wrap;
     }
 
     .data-section {
