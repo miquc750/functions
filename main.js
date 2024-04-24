@@ -5,6 +5,15 @@ const getCity = () => {
     return currentURLSplit[currentURLSplit.length - 1].toLowerCase();
 };
 
+//LOADING OVERLAY
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        const overlay = document.getElementById('loadingOverlay');
+        overlay.style.opacity = '0';
+        overlay.style.visibility = 'hidden';
+    }, 2000); // Ajusta el tiempo según necesites, aquí está configurado para 2000 ms (2 segundos)
+});
+
 //SCROLL ANIMATION
 let addScrolling = () => {
     let scrollClass = 'scroll';
