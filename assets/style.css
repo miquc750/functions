@@ -44,6 +44,16 @@
         margin-bottom: calc(var(--gutter)/2);
     }
 
+    h1.hello {
+        font-size: calc(var(--font-size)*2);
+        font-family: var(--font-display);
+        color: var(--black);
+        position:static;
+        text-align: left;
+        display: block;
+        margin-bottom: var(--gutter);
+    }
+
     h2 {
         font-family: var(--font-display);
         font-size: calc(var(--font-size)*3);
@@ -405,13 +415,24 @@
             }
         }
 
-    .banner a, .links a {
+    .banner a, .links a, .city-radar a {
         background-color: var(--black);
         color: var(--white);
         padding: var(--gutter) calc(var(--gutter)*1.5) var(--gutter) calc(var(--gutter)*1.5);
         border-radius: 8px;
         text-wrap: nowrap;
         text-align: center;
+    }
+
+    .city-radar a {
+        width: fit-content;
+    }
+
+    .city-radar img {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        height: 100%;
+        object-fit: cover;
     }
 
     .button-active {
@@ -747,7 +768,7 @@
     .where {
         flex-direction: row;
         width: 100%;
-        gap: calc(var(--gutter)*4);
+        gap:5%;
         align-items: start;
         padding: 0;
     }
@@ -801,6 +822,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+    }
+
+    #hello {
+        max-width: 40em;
+        margin-left: 32px;
     }
 
     /* components */
