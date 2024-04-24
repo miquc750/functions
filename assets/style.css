@@ -744,19 +744,19 @@
     }
 
     .city {
-        max-width: 50vw;
+        width: 100%;
     }
 
     .city-radar {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
+        flex-direction: row;
         gap: 40px;
         padding: 10%;
     }
 
     #myRadarChart {
-        max-width: 560px;
-        max-height: 560px;
+        width: 40%;
+        height: auto;
     }
 
     .where ul {
