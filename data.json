@@ -25,14 +25,6 @@
             "maps": "https://maps.app.goo.gl/QQwfBeKT6cW5UCCeA"
         },
         {
-            "city": "madrid",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
             "city": "barcelona",
             "image": "https://node-living.com/wp-content/uploads/2023/10/parc-guell-boutique-1.jpg",
             "name": "Node Sant Antoni Boutique",
@@ -57,236 +49,124 @@
             "maps": null
         },
         {
-            "city": "barcelona",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "city": "valencia",
+            "image": "https://img3.idealista.com/blur/WEB_LISTING-M/0/id.pro.es.image.master/2d/46/ff/939071004.jpg",
+            "name": "MyCO Living",
+            "address": "C. del Poeta Querol, 7, Ciutat Vella, 46002 València",
+            "link": "https://www.mycoliving.es/",
+            "maps": "https://maps.app.goo.gl/w5GDA6rbptSYU6tz9"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://images.squarespace-cdn.com/content/v1/61de9966c35ca72645983547/df934a4d-8dd2-487a-876f-b3f1109e0673/vivarium-coliving-valencia.jpg?format=1500w",
+            "name": "Vivarium",
+            "address": "Carrer de Joaquín Costa, 10, L'Eixample, 46005",
+            "link": "https://www.vivariumcoliving.com/",
+            "maps": "https://maps.app.goo.gl/92WLrw5w8G2cXAFSA"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "valencia",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "valencia",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://4wanders.com/wp-content/uploads/2023/01/Coliving_Section-1.png",
+            "name": "4Wanders",
+            "address": "Av. de Peris i Valero, 99, L'Eixample, 46004",
+            "link": "https://4wanders.com/#form",
+            "maps": "https://maps.app.goo.gl/eEbauce2QxmsNLV29"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://flipcoliving.com/wp-content/uploads/2021/09/coliving-malaga-costa-del-sol-living-3401_DNV0664-1200x800.jpg",
+            "name": "FlipCo Malaga",
+            "address": "C/ la Merced, 0, Distrito Centro, 29012",
+            "link": "https://flipcoliving.com/coliving/malaga-centro-shared-homes-in-malaga/",
+            "maps": "https://maps.app.goo.gl/y97GBg5yJicbnmuCA"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://bucket.mlcdn.com/a/1837/1837890/images/3d06e4b06d3b70fbc19782542f09fc87c160e9a0.jpeg",
+            "name": "Nordik Coliving",
+            "address": "C. Francisco Monje, 11, Distrito Centro, 29009",
+            "link": "https://thrcoliving.com/",
+            "maps": "https://maps.app.goo.gl/12esMk25Yt8qPHwQ9"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "malaga",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/418295561.jpg?k=2f7afbce4a0975e1e70302b352152be9fc94820f9dffd01595b035c6a958e740&o=&hp=1",
+            "name": "La Kookaburra",
+            "address": "Partido Alaminos 386 Poligono 17, 29100",
+            "link": "https://www.lakookaburra.com/co-living-and-workation-malaga",
+            "maps": "https://maps.app.goo.gl/RoFjUBbZ4GVe8YcG6"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://alegoriaexperience.com/wp-content/uploads/2022/06/habitacion-coliving-sevilla2.jpeg",
+            "name": "Alegoria Coliving",
+            "address": "C. Cerrajería, 23, Planta 1, Casco Antiguo, 41004",
+            "link": "https://alegoriaexperience.com/",
+            "maps": "https://maps.app.goo.gl/Wib68Vxbx43BiaEw5"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "sevilla",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "sevilla",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://a0.muscache.com/im/pictures/fa5a27cf-f140-4017-8f8e-f734e5353c84.jpg",
+            "name": "Almansa 11",
+            "address": "C. Almansa, 13, Casco Antiguo, 41001",
+            "link": "https://almansa11.com/coliving/",
+            "maps": "https://maps.app.goo.gl/HxuuFWCJA4uFUncR9"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://co-living.imgix.net/uploads/listings/7905/photos/Pndv19XuGy.jpg",
+            "name": "Coliving Nevada",
+            "address": "Pl. Obispo Reyes, 3, 18140",
+            "link": "https://www.instagram.com/colivingnevada/",
+            "maps": "https://maps.app.goo.gl/AfewkbWPJ5MUcD989"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "granada",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "granada",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/23/6d/f1/zonas-comunes.jpg?w=700&h=-1&s=1",
+            "name": "Hostel Nut",
+            "address": "Calle San Jose Baja 6, 18005",
+            "link": "https://hostelnut.com/",
+            "maps": "https://maps.app.goo.gl/TeMqDvdj4PU6yhve8"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://coliving1907.com/wp-content/uploads/Chill-out-11.jpg",
+            "name": "1907 Coliving",
+            "address": "C. Escritor Benito Pérez Galdós, 49, 35002",
+            "link": "https://coliving1907.com/en/",
+            "maps": "https://maps.app.goo.gl/BhqULqC46QZgXMNL6"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://i0.wp.com/travelandtapas.com/storage/2023/05/eco-isleta-coliving.jpg?fit=1200%2C800&ssl=1",
+            "name": "EcoIsleta Coliving",
+            "address": "C. Veneguera, 28, 35009",
+            "link": "https://ecoisleta.com/eco-coliving-la-isleta/",
+            "maps": "https://maps.app.goo.gl/oKTR3bvm6nxHTLpp9"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "alicante",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "alicante",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "alicante",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://s1.elespanol.com/2022/09/30/alicante/economia/707189882_227619273_1706x960.jpg",
+            "name": "Suiters",
+            "address": "Av. Alfonso El Sabio, 7, 03002",
+            "link": "https://wearesuiters.com/es/ciudades/",
+            "maps": "https://maps.app.goo.gl/kNMyvm9Br4FHenqX8"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://sun-and-co.com/wp-content/uploads/2019/05/2-0H0A3142.jpg",
+            "name": "Sun and Co",
+            "address": "C. del Sindicat, 44, Centre, 07002",
+            "link": "https://sun-and-co.com/",
+            "maps": "https://maps.app.goo.gl/s4jCFCLXWbrnnrFW6"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "palma",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "palma",
-            "image": null,
-            "name": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://palmacoliving.co/wp-content/uploads/2023/01/Hab-004-1024x683.jpg",
+            "name": "Palma Coliving",
+            "address": "Carrer de Son Armadans, 15, Ponent, 07014",
+            "link": "https://palmacoliving.co/",
+            "maps": "https://maps.app.goo.gl/mD7dZ6ZVFgRntRyx9"
         }
     ],
 
@@ -328,7 +208,7 @@
             "dish": "Cava",
             "price": "$$",
             "address": "C/ de Montcada, 22, Ciutat Vella, 08003",
-            "link": null,
+            "link": "https://www.elxampanyet.es/",
             "maps": "https://maps.app.goo.gl/6yVoyTp75ES4CqrX6"
         },
         {
@@ -343,283 +223,223 @@
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://image.ondacero.es/clipping/cmsimages02/2023/07/28/7DE9F59D-E955-4B94-9752-C7411FDA7C79/fartones-rellenos_103.jpg?crop=1290,968,x0,y409&width=1200&height=900&optimize=low&format=webply",
+            "name": "Eras Pan",
+            "dish": "Fartons",
+            "price": "$",
+            "address": "C/ de Guillem de Castro, 57, Extramurs, 46008",
+            "link": "https://eraspan.com/",
+            "maps": "https://maps.app.goo.gl/kJS8BNvkYcHR2hHp8"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://horchateria-daniel.es/wp-content/uploads/2022/06/IMG_1243.jpg",
+            "name": "Horchateria Daniel",
+            "dish": "Horchata",
+            "price": "$$",
+            "address": "Mercado de Colón, Carrer de Jorge Juan, 19, Ensanche, 46004",
+            "link": "https://horchateria-daniel.es/",
+            "maps": "https://maps.app.goo.gl/5gVCT3zajE7tt1Ra8"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://lucaseating.com/wp-content/uploads/2022/08/casa-carmela-destacada-grande.jpg",
+            "name": "Casa Carmela",
+            "dish": "Paella",
+            "price": "$$$",
+            "address": "C/ d'Isabel de Villena, 155, Poblats Marítims, 46011",
+            "link": "https://www.casa-carmela.com/es/en/home/",
+            "maps": "https://maps.app.goo.gl/56Vm1ggCy5QEtM3t6"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://valenciaplaza.com/public/Image/2021/1/WhatsAppImage2021-01-26at12.23.41_NoticiaAmpliada.jpg",
+            "name": "ALENAR Bodega Mediterránea",
+            "dish": "Tapas",
+            "price": "$$",
+            "address": "Carrer de Martínez Cubells, 6, Ciutat Vella, 46002",
+            "link": "https://alenarbodega.com/",
+            "maps": "https://maps.app.goo.gl/n72WqXVrPqGx2Jcw9"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://www.uvedobletaberna.com/wp-content/uploads/2022/12/galeria-02-salmorejo.jpg",
+            "name": "Uvedoble Taberna",
+            "dish": "Tapas",
+            "price": "$$",
+            "address": "C/ Alcazabilla, 1, Distrito Centro, 29015",
+            "link": "https://www.uvedobletaberna.com/",
+            "maps": "https://maps.app.goo.gl/4KoUuqQRHbhy5JDo7"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://lh5.googleusercontent.com/p/AF1QipNZAJCrtTMRbBypgzXCw91k45yPb98t9mCGlTfR",
+            "name": "Colmado 93",
+            "dish": "Bar",
+            "price": "$",
+            "address": "C. Carretería, 93, Distrito Centro, 29008",
+            "link": "https://drive.google.com/file/d/1prh_S5TxeiD90kPVERDWUkT-kr6Q10_l/view",
+            "maps": "https://maps.app.goo.gl/1Q11T6gLesfKZkbW6"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "malaga",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://i0.wp.com/grupocasalola.com/wp-content/uploads/2023/04/OLF6057.jpg?fit=800%2C750&ssl=1",
+            "name": "Pez Lola",
+            "dish": "Spanish",
+            "price": "$$",
+            "address": "C. Granada, 42, Distrito Centro, 29008",
+            "link": "https://grupocasalola.com/",
+            "maps": "https://maps.app.goo.gl/9zBkm6mpaFrLLxBXA"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://alimentariediversi.es/wp-content/uploads/2022/03/nuestra-carta.jpg",
+            "name": "Alimentari E Diversi",
+            "dish": "Italian",
+            "price": "$$",
+            "address": "C. Julio César, 14, Casco Antiguo, 41001",
+            "link": "https://alimentariediversi.es/",
+            "maps": "https://maps.app.goo.gl/nr177n7BZAA2ctAE6"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://sevilla.cosasdecome.es/wp-content/uploads/2021/01/Galleta-de-cola-de-toro-847x435.jpg",
+            "name": "Az-Zait",
+            "dish": "Tasting Menu",
+            "price": "$$",
+            "address": "Pl. S. Lorenzo, 1, Casco Antiguo, 41002",
+            "link": "https://restaurante.covermanager.com/az-zait/",
+            "maps": "https://maps.app.goo.gl/dhoRFpPy68hi4syn8"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "sevilla",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://casaanibalrestaurante.com/wp-content/uploads/2022/10/casa_anibal_terraza.jpg",
+            "name": "Casa Aníbal",
+            "dish": "Spanish cuisine",
+            "price": "$$",
+            "address": "C. Reyes Católicos, 22, Casco Antiguo, 41001",
+            "link": "https://casaanibalrestaurante.com/carta/",
+            "maps": "https://maps.app.goo.gl/G39knBVwUiN9Qafq5"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://flamenco.one/img/sgc/pag/6ed4m/m383l_480.jpg",
+            "name": "Venta El Gallo",
+            "dish": "Flamenco",
+            "price": "$$",
+            "address": "Barranco de los Negros, 5, Albaicín, 18010",
+            "link": "https://cuevaventaelgallo.es/",
+            "maps": "https://maps.app.goo.gl/qaN1wWMEM7t1mHGV8"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/1a/b1/08/94/terraza-de-cafe-futbol.jpg",
+            "name": "Cafe Futbol",
+            "dish": "Churros con chocolate",
+            "price": "$",
+            "address": "Pl. de Mariana Pineda, 6, Centro, 18009",
+            "link": "https://cafefutbol.com/",
+            "maps": "https://maps.app.goo.gl/KE1giLYNxCczT76XA"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "granada",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://lomejordegranada.es/wp-content/uploads/2018/02/atelier-casa-de-comidas-web-1.jpg",
+            "name": "Atelier Casa de Comidas",
+            "dish": "Tasting Menu",
+            "price": "$$",
+            "address": "C. Sos del Rey Católico, nº7, Local 3, Genil, 18006",
+            "link": "https://ateliercasadecomidas.com/",
+            "maps": "https://maps.app.goo.gl/f5a4yd15fWU2AC8D9"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null,
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/1d/a1/ea/0c/caption.jpg",
+            "name": "Qué Leche",
             "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "price": "$$",
+            "address": "C. Torres, 22, 35002",
+            "link": "https://www.restaurantequeleche.es/",
+            "maps": "https://maps.app.goo.gl/NbCsZQ5nvsxdiUJu9"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://lh3.googleusercontent.com/p/AF1QipN_Q0WXBC-fUir3hbbJ6xXDELylBnhBZsuAqR8=s1600-w640",
+            "name": "Deliciosa Marta",
+            "dish": "Cochinillo",
+            "price": "$$",
+            "address": "C. Escritor Benito Pérez Galdós, 33, 35002",
+            "link": "https://www.instagram.com/delciosamarta/",
+            "maps": "https://maps.app.goo.gl/Ro91Ccuh6r8GuLzm8"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "gran-canaria",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/2a/1d/a9/a3/los-guayres.jpg",
+            "name": "Los Guayres",
+            "dish": "Tasting Menu",
+            "price": "$$$",
+            "address": "Av. Los Marrero, 2, Puerto de Mogán, 35138",
+            "link": "https://losguayres.com/menu/",
+            "maps": "https://maps.app.goo.gl/Qniyej6fpyNXzfrW9"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://cdn.website.dish.co/media/73/93/3145289/Alma-Cocina-Viajera-Vierias-Sobrasada-Iberica-y-Papada.jpg",
+            "name": "Alma Cocina Viajera",
+            "dish": "Market",
+            "price": "$$",
+            "address": "Galerias Comerciales, C. Churruca, 32, Local 15, 03003",
+            "link": "https://almacocinaviajera.eatbu.es/",
+            "maps": "https://maps.app.goo.gl/4AAWLNhs93vND2XL6"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://media-cdn.tripadvisor.com/media/photo-p/23/74/9c/67/gamba-roja.jpg",
+            "name": "Alba Restaurante",
+            "dish": "Tasting Menu",
+            "price": "$$$",
+            "address": "C. de la Virgen del Socorro, 68, 03002",
+            "link": "https://www.albarestaurante.com/en/",
+            "maps": "https://maps.app.goo.gl/Gz3iNi85kRyGdW4y8"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "alicante",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/e2/a2/71/local.jpg",
+            "name": "La Máquina de Escribir",
+            "dish": "Spanish Cuisine",
+            "price": "$$",
+            "address": "C/ Pardo Gimeno, 14, 03007",
+            "link": "https://www.facebook.com/lamaquinadeescribiralicante/",
+            "maps": "https://maps.app.goo.gl/F9E6LnuepmwkfomPA"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://abcmallorcastorage.blob.core.windows.net/images/2013/04/Arume-Restaurant-04.jpg",
+            "name": "Arume Restaurant",
+            "dish": "Japanese",
+            "price": "$$",
+            "address": "Carrer de Sant Miquel, 83, Centre, 07002",
+            "link": "http://www.tomeumarti.com/es",
+            "maps": "https://maps.app.goo.gl/47qscyAqxvPCrkck8"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://abcmallorcastorage.blob.core.windows.net/images/2015/07/adrian-quetglas-restaurant-19.jpg",
+            "name": "Adrian Quetglas Restaurant",
+            "dish": "Tasting Menu",
+            "price": "$$",
+            "address": "Pg. de Mallorca, 20, Centre, 07012",
+            "link": "https://adrianquetglas.es/",
+            "maps": "https://maps.app.goo.gl/ZwwaNWLGoDfxSDw59"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
-        },
-        {
-            "city": "palma",
-            "image": null,
-            "name": null,
-            "dish": null,
-            "price": null,
-            "address": null,
-            "link": null,
-            "maps": null
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/0d/a9/0e/92/zona-club-del-tast-club.jpg",
+            "name": "Tast Club",
+            "dish": "Tapas",
+            "price": "$$$",
+            "address": "Carrer de Sant Jaume, 6, Centre, 07012",
+            "link": "https://tast.com/es/restaurant/tast-club/",
+            "maps": "https://maps.app.goo.gl/C3eFMWyYnwLsUTUA9"
         }
     ],
     
@@ -695,6 +515,134 @@
             "address": "C/ d'Estruc, 9, Ciutat Vella, 08002 Barcelona, España",
             "link": "https://www.onecowork.com/en/locations/onecowork-placa-catalunya",
             "maps": "https://maps.app.goo.gl/C71PmzEvTsPnCDD48"
+        },
+        {
+            "city": "valencia",
+            "image": "https://wayco.es/wp-content/uploads/2023/12/DSC04692-copia-1-2048x1365.webp",
+            "name": "Wayco Cabanyal",
+            "address": "Carrer de Marià Cuber, 17, Poblats Marítims, 46011",
+            "link": "https://wayco.es/en/",
+            "maps": "https://maps.app.goo.gl/uMLy22o98kPi5bZy6"
+        },
+        {
+            "city": "valencia",
+            "image": "https://coworkingspain.es/sites/default/files/coworking/img20201014121335-min.jpg",
+            "name": "Flying Bean Coffee",
+            "address": "C/ del Doctor Vila Barberà, 12, Extramurs, 46007",
+            "link": "https://flyingbeancoffee.com/workspace/",
+            "maps": "https://maps.app.goo.gl/AYiHnnNaUPzo3J9X6"
+        },
+        {
+            "city": "valencia",
+            "image": "https://vortexcoworking.es/wp-content/uploads/2024/02/Coworking-Space-Valencia-Vortex-Coworking-scaled.jpg",
+            "name": "Vortex Coworking",
+            "address": "C/ de Sorní, 12, L'Eixample, 46004",
+            "link": "https://vortexcoworking.es/en/vortex-centro/",
+            "maps": "https://maps.app.goo.gl/fNdWRjoxJA5Cx1s69"
+        },
+        {
+            "city": "malaga",
+            "image": "https://laaduanacoworking.com/wp-content/uploads/2022/11/la-aduana-01.jpg",
+            "name": "La Aduana Coworking",
+            "address": "Calle Cortina del Muelle, 11, 1ª planta, Distrito Centro, 29015",
+            "link": "https://laaduanacoworking.com/en/la-aduana-coworking-english/",
+            "maps": "https://maps.app.goo.gl/wfUSkkZECjQRKpLd7"
+        },
+        {
+            "city": "malaga",
+            "image": "https://www.metropolitandesignlab.es/wp-content/uploads/2023/09/coworking-en-malaga-centro-1.webp",
+            "name": "Metropolitan Design Lab",
+            "address": "C. Alhóndiga, 6, Distrito Centro, 29005",
+            "link": "https://www.metropolitandesignlab.es/",
+            "maps": "https://maps.app.goo.gl/Tv7Co8PP9hM535PTA"
+        },
+        {
+            "city": "malaga",
+            "image": "https://coworkingspain.es/sites/default/files/styles/thumbnail-580x383/public/coworking/img3147_0.jpg?itok=Vt7Fy6yv",
+            "name": "Coworking DobleMitad Malagueta",
+            "address": "Plaza Poeta Alfonso Canales, 4, Distrito Centro, 29001",
+            "link": "https://doblemitad.com/espacios/oficinas-y-domicilio-fiscal-en-oficinas-y-espacios-de-trabajo-soho/",
+            "maps": "https://maps.app.goo.gl/dwQvvvLHdpra1hLV8"
+        },
+        {
+            "city": "sevilla",
+            "image": "https://www.coworkbooking.com/images/1600!0/kapacita/7338/21b_arcadiacoworking_16122016_ggm7872.jpg",
+            "name": "Arcadia",
+            "address": "C. Cuna, 16, primera planta, Casco Antiguo, 41004",
+            "link": "https://arcadiacoworking.com/",
+            "maps": "https://maps.app.goo.gl/FRxoT5y2T4hLg7P46"
+        },
+        {
+            "city": "sevilla",
+            "image": "https://workincompany.com/wp-content/uploads/2023/09/zona_relax.jpg",
+            "name": "workINcompany",
+            "address": "C. Rioja, 13, 1ºC, Casco Antiguo, 41001",
+            "link": "https://workincompany.com/",
+            "maps": "https://maps.app.goo.gl/fdQapBPJ4JkGw2F88"
+        },
+        {
+            "city": "granada",
+            "image": "https://freesoulcoworking.com/wp-content/uploads/2022/07/28.jpg",
+            "name": "Coworking FreeSouL",
+            "address": "C. Pintor Murillo, 1, Ronda, 18002",
+            "link": "https://freesoulcoworking.com/",
+            "maps": "https://maps.app.goo.gl/tvR6Ta7N6E8q2uDeA"
+        },
+        {
+            "city": "granada",
+            "image": "https://www.topyco.com/assets/carousel-1-2.webp",
+            "name": "TOPyCo CoWorking",
+            "address": "C. Albahaca, 2, Ronda, 18006",
+            "link": "https://www.topyco.com/",
+            "maps": "https://maps.app.goo.gl/9MMviz1tK9k2Nnb36"
+        },
+        {
+            "city": "gran-canaria",
+            "image": "https://images.squarespace-cdn.com/content/v1/5e86776a453a3c001d70d470/cf682e1e-3ec8-46c5-b909-30426db4c403/dojo-bali-min.jpeg",
+            "name": "Dojo Coworking",
+            "address": "C. Eduardo Benot, 51-53, 1ºA, 35008",
+            "link": "https://dojocoworking.es/",
+            "maps": "https://maps.app.goo.gl/51KXEN8fHZcJMBdc6"
+        },
+        {
+            "city": "gran-canaria",
+            "image": "https://icowork-static-prd.s3.amazonaws.com/media/listings_cover_pictures/23DR123NeilNavarro.jpg",
+            "name": "GoCoworking",
+            "address": "Calle Agustín Millares Carló, C. Mlle. Las Palmas, 2A, 35003",
+            "link": "https://www.gocoworking.es/",
+            "maps": "https://maps.app.goo.gl/4jQtwkRDhb3XX7r57"
+        },
+        {
+            "city": "alicante",
+            "image": "https://coworkingspain.es/sites/default/files/coworking/ulabcoworking.jpg",
+            "name": "ULab",
+            "address": "Plaça de San Cristóbal, 14, 03002",
+            "link": "https://ulab.es/",
+            "maps": "https://maps.app.goo.gl/ztp4dzTunc7hKxgM6"
+        },
+        {
+            "city": "alicante",
+            "image": "https://image.workin.space/wijpeg-6fl5tpgppdlke37uxti0f5ucd/regus-business-world-alicante-coworking-alicante-11_standard.jpg?crop=112%2C0%2C1777%2C1333&width=1844",
+            "name": "Regus",
+            "address": "Av. Perfecto Palacio de la Fuente, 1, 03003",
+            "link": "https://www.regus.com/en-gb",
+            "maps": "https://maps.app.goo.gl/Dn87V9edxNRR9yMWA"
+        },
+        {
+            "city": "palma",
+            "image": "https://coworkingspain.es/sites/default/files/coworking/salareuniones_4.jpg",
+            "name": "Nidus Coworking",
+            "address": "Carrer de Margalida Caimari, 24, Entresuelo, Levante, 07005",
+            "link": "https://nidus39.com/",
+            "maps": "https://maps.app.goo.gl/42hX9FMYuRaCX6dW7"
+        },
+        {
+            "city": "palma",
+            "image": "https://static.wixstatic.com/media/f74dd1_7f7dec9de6cb457ba2b8d6b0d037f825~mv2.jpg/v1/fill/w_1050,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_7285%20(1).jpg",
+            "name": "Cómodo&Co",
+            "address": "La Rambla, 13, Centre, 07003",
+            "link": "https://www.coworking-palma.com/",
+            "maps": "https://maps.app.goo.gl/nimK93G1SsB3Y56P8"
         }
     ],
 
@@ -715,16 +663,6 @@
             "name": "Palacio de Cristal"
         },
         {
-            "city": "madrid",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "madrid",
-            "image": null,
-            "name": null
-        },
-        {
             "city": "barcelona",
             "image": "https://www.casabatllo.es/wp-content/uploads/1899/12/parc-guell.jpg",
             "name": "Parc Güell"
@@ -736,153 +674,118 @@
         },
         {
             "city": "barcelona",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "barcelona",
-            "image": null,
-            "name": null
+            "image": "https://www.stirworld.com/images/article_gallery/front-facade-of-casa-batllo-casa-batllo-by-antoni-gaudi-stirworld-210624052442.jpg",
+            "name": "Casa Batlló"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null
+            "image": "https://www.spain.info/.content/images/cabeceras-grandes/comunidad-valenciana/ciudad-artes-ciencias-noche-valencia-pexel256150.jpg",
+            "name": "City of Arts and Sciences"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null
+            "image": "https://www.visitvalencia.com/sites/default/files/media/media-images/images/LONJA_SEDA_VALENCIA%20_3__1024.jpg",
+            "name": "Lonja de la Seda"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null
+            "image": "https://www.visitvalencia.com/sites/default/files/styles/gallery_default/public/media/media-images/images/OCEANOGRAFIC_EVENTOS_VALENCIA%20_2_.JPG?itok=bwtfjGCS",
+            "name": "Oceanografic"
         },
         {
             "city": "valencia",
-            "image": null,
-            "name": null
+            "image": "https://www.visitvalencia.com/sites/default/files/styles/wysiwyg_large/public/media/media-images/images/pesca.jpg?itok=mcySGaGN",
+            "name": "L'albufera"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null
+            "image": "https://sh-assets.holidu.com/imagecache/blog-photos/12439_Fill_800_800.jpg",
+            "name": "Central Market"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null
+            "image": "https://www.andalucia.com/sites/default/files/MVC110390222-Gibralfaro-Malaga-Andalucia_com.jpg",
+            "name": "Gibralfaro Castle"
         },
         {
             "city": "malaga",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "malaga",
-            "image": null,
-            "name": null
+            "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/4a/ae/f4.jpg",
+            "name": "Alcazaba"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null
+            "image": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1584639740174-02H2R8YHE3NBHUM40YBG/que-ver-en-sevilla-alcazar.jpg",
+            "name": "Alcazar"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null
+            "image": "https://www.buenosdiasmundo.com/wp-content/uploads/2018/12/plaza-espana-que-ver-sevilla-1500x1125.jpg",
+            "name": "Plaza de España"
         },
         {
             "city": "sevilla",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "sevilla",
-            "image": null,
-            "name": null
+            "image": "https://www.diariodesevilla.es/2024/02/05/vivirensevilla/Torre-Oro-Sevilla_1873023437_203265867_667x375.jpg",
+            "name": "Torre del oro"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null
+            "image": "https://lp-cms-production.imgix.net/2023-08/iStock-1350628212.jpg",
+            "name": "Alhambra"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null
+            "image": "https://mycities.es/public/data/images/originals/647cc81373a66-dp-563701754-848.jpg",
+            "name": "Paseo de los Tristes"
         },
         {
             "city": "granada",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "granada",
-            "image": null,
-            "name": null
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVI_Oh17ru2mr3nzeQ_BR0rHcBU6XE-wGF60TGEd3lPQ&s",
+            "name": "Cathedral"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Puerto-de-Mogan-que-ver-en-gran-canaria-imprescindible.jpg",
+            "name": "Mogan Port"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Dunas-de-Maspalomas-que-ver-en-Gran-canaria-imprescindible.jpg",
+            "name": "Maspalomas"
         },
         {
             "city": "gran-canaria",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "gran-canaria",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/Playa-Las-Canteras-que-ver-en-Gran-canaria-imprescindible.jpg",
+            "name": "Canteras Beach"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/plaza-luceros-que-ver-en-alicante.jpg",
+            "name": "Plaza Luceros"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/explanada-que-visitar-en-alicante.jpg",
+            "name": "Explanada"
         },
         {
             "city": "alicante",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "alicante",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/puerto-alicante.jpg",
+            "name": "Port"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/2020/05/catedral-palma-mallorca.jpg",
+            "name": "Cathedral"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/palacio-real-almudaina.jpg",
+            "name": "Almudaina Royal Palace"
         },
         {
             "city": "palma",
-            "image": null,
-            "name": null
-        },
-        {
-            "city": "palma",
-            "image": null,
-            "name": null
+            "image": "https://www.viajeroscallejeros.com/wp-content/uploads/hort-del-rei-palma.jpg",
+            "name": "S'Hort del Rei"
         }
     ],
 
@@ -948,7 +851,7 @@
             "safetyIndexLabel": "Safety Index",
             "securityMurder": "7.14%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
-            "transportationText": "Madrid's metro service runs from 6:00 AM to 1:30 AM, offering extensive international connectivity with 207 destinations from its main airport, the most among the cities considered. The city also has 2 inter-regional train stations.",
+            "transportationText": "Madrid's metro service runs from 6AM to 1:30AM, offering extensive international connectivity with 207 destinations from its main airport, the most among the cities considered. The city also has 2 inter-regional train stations.",
             "transportationMetro": "6am - 1:30am",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "207",
@@ -986,7 +889,7 @@
             "securityMurder": "7.00%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "The local metro service runs until 1:30 AM, and with the airport offering 154 international routes, Málaga is well-connected, though it slightly lags behind larger cities in terms of total destinations.",
-            "transportationMetro": "6:30 am - 1:30 am",
+            "transportationMetro": "6:30am - 1:30am",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "154",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1023,7 +926,7 @@
             "securityMurder": "7.41%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "Barcelona's transportation infrastructure is robust, with a metro system that facilitates easy exploration of the city from early morning till midnight. Its airport’s extensive network of 205 international destinations ensures Barcelona is never isolated.",
-            "transportationMetro": "5:00 am - 0:00 am",
+            "transportationMetro": "5am - 0:00am",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "205",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1060,7 +963,7 @@
             "securityMurder": "8.71%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "Sevilla's public transport includes a metro system operating until 11:00 PM. The city’s smaller airport and single inter-regional train station might limit some travel options but are sufficient for most residents.",
-            "transportationMetro": "6:30 am - 11:00 pm",
+            "transportationMetro": "6:30am - 11pm",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "84",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1097,7 +1000,7 @@
             "securityMurder": "4.31%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "While Granada does not have its own metro system, its transportation is facilitated by buses and taxis. The city’s airport offers fewer international connections than larger cities, but there is convenient rail service for national travel.",
-            "transportationMetro": "6:30 am - 11:00 pm",
+            "transportationMetro": "6:30am - 11pm",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "9",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1134,7 +1037,7 @@
             "securityMurder": "5.28%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "The island’s transport system includes buses (guaguas) and a well-organized taxi system. While it lacks a metro and inter-regional train stations, its airport provides robust connectivity with numerous European cities, making it a gateway to exploring the continent.",
-            "transportationMetro": "5:30 am - 11:00 pm",
+            "transportationMetro": "5:30am - 11pm",
             "transportationMetroLabel": "urban bus schedule on working days",
             "transportationAirport": "129",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1171,7 +1074,7 @@
             "securityMurder": "12.06%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "Alicante’s transportation infrastructure is good with a reliable tram system connecting major parts of the city and surrounding areas. The airport, though smaller than Madrid's or Barcelona’s, offers a decent number of international flights which adequately serve the expat community.",
-            "transportationMetro": "7:00 am - 11:30 pm",
+            "transportationMetro": "7am - 11:30pm",
             "transportationMetroLabel": "tram schedule on working days",
             "transportationAirport": "138",
             "transportationAirportLabel": "destinations from its main airport",
@@ -1208,7 +1111,7 @@
             "securityMurder": "7.32%",
             "securityMurderLabel": "murders per 10,000 inhabitants",
             "transportationText": "The city boasts an efficient bus system and an expanding metro system that make navigation straightforward. Palma’s airport is one of the busiest in Spain during the summer months, offering extensive flight connections across Europe.",
-            "transportationMetro": "6:30 am - 11:00 pm",
+            "transportationMetro": "6:30am - 11pm",
             "transportationMetroLabel": "metro schedule on working days",
             "transportationAirport": "157",
             "transportationAirportLabel": "destinations from its main airport",

@@ -262,8 +262,8 @@
     }
 
     footer {
-        padding-top: 10%;
-        padding-bottom: 15%;
+        padding-top: 64px;
+        padding-bottom: 64px;
         display: flex;
         flex-direction: row;
         justify-content: center;
